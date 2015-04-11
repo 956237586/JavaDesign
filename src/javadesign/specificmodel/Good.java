@@ -5,11 +5,11 @@ import javadesign.abstractmodel.ItemFromJTable;
 public class Good extends ItemFromJTable {
 	private static final long serialVersionUID = 1L;
 	private int id; // ID 0
-	private String name; // Ãû³Æ 1
-	private String category; // Àà±ğ 2
-	private int quantity; // ÊıÁ¿ 3 ¿ÉÄÜÊÇ¿â´æ£¬Ò²¿ÉÄÜÊÇ²Ù×÷Êı
-	private double unitPrice; // µ¥¼Û 4
-	private double totalPrice; // ×Ü¼Û 5
+	private String name; // åç§° 1
+	private String category; // ç±»åˆ« 2
+	private int quantity; // æ•°é‡ 3 å¯èƒ½æ˜¯åº“å­˜ï¼Œä¹Ÿå¯èƒ½æ˜¯æ“ä½œæ•°
+	private double unitPrice; // å•ä»· 4
+	private double totalPrice; // æ€»ä»· 5
 
 	public Good() {
 		add(id);

@@ -36,7 +36,7 @@ public class GeneralFrame extends Window implements MouseListener {
 	public GeneralFrame(int btnNum) {
 		super("res/bg.png");
 		this.btnNum = btnNum;
-		// ÉèÖÃ×Ô¶¯ÊÊÓ¦µÄ½çÃæ
+		// è®¾ç½®è‡ªåŠ¨é€‚åº”çš„ç•Œé¢
 		addComponentListener(new ComponentAdapter() {
 			@Override
 			public void componentResized(ComponentEvent arg0) {
@@ -63,10 +63,10 @@ public class GeneralFrame extends Window implements MouseListener {
 		btnSave = jButtons.get(2);
 		btnRefresh = jButtons.get(3);
 
-		btnAdd.setText("Ìí¼Ó");
-		btnDel.setText("É¾³ı");
-		btnSave.setText("±£´æ");
-		btnRefresh.setText("Ë¢ĞÂ");
+		btnAdd.setText("æ·»åŠ ");
+		btnDel.setText("åˆ é™¤");
+		btnSave.setText("ä¿å­˜");
+		btnRefresh.setText("åˆ·æ–°");
 		
 		for (int i = 0; i < 4; i++) {
 			jButtons.get(i).addMouseListener(this);
@@ -85,7 +85,7 @@ public class GeneralFrame extends Window implements MouseListener {
 			}
 			data.removeRow(currentItemIndex);
 		} else {
-			Util.alertError("ÁĞ±íÒÑ¾­¿ÕÁËÅ¶-_-¡£sorry£¡");
+			Util.alertError("åˆ—è¡¨å·²ç»ç©ºäº†å“¦-_-ã€‚sorryï¼");
 		}
 	}
 

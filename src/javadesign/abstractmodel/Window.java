@@ -13,19 +13,19 @@ import javadesign.util.StaticValue;
 
 public class Window extends JFrame {
 	private static final long serialVersionUID = 1L;
-	protected static Status status = new Status();// Îª±£Ö¤statusÎ¨Ò»ËùÒÔĞ´ÔÚÕâÀï
+	protected static Status status = new Status();// ä¸ºä¿è¯statuså”¯ä¸€æ‰€ä»¥å†™åœ¨è¿™é‡Œ
 	protected static GoodsData goodsData = new GoodsData();
 	protected PicturePanel bgPicture;
 
 	public Window() {
-		setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);// ËùÓĞ´°¿ÚÄ¬ÈÏÍË³ö²Ù×÷ÎªÒş²Ø
+		setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);// æ‰€æœ‰çª—å£é»˜è®¤é€€å‡ºæ“ä½œä¸ºéšè—
 		setSize(StaticValue.DEFAULT_WIDTH, StaticValue.DEFAULT_HEIGHT);
 		getContentPane().setLayout(null);
 	}
 
 	public Window(String imgPath) {
 		this();
-		// ÉèÖÃ×Ô¶¯Ëõ·ÅµÄ±³¾°
+		// è®¾ç½®è‡ªåŠ¨ç¼©æ”¾çš„èƒŒæ™¯
 		bgPicture = new PicturePanel(imgPath);
 		addComponentListener(new ComponentAdapter() {
 			@Override
@@ -49,7 +49,7 @@ public class Window extends JFrame {
 	}
 	
 	public void setup() {
-		setLocationRelativeTo(null);// ËùÓĞ´°¿ÚÄ¬ÈÏÆô¶¯Î»ÖÃÎª¾ÓÖĞ
+		setLocationRelativeTo(null);// æ‰€æœ‰çª—å£é»˜è®¤å¯åŠ¨ä½ç½®ä¸ºå±…ä¸­
 		setVisible(true);
 	}
 }

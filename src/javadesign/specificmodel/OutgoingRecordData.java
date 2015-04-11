@@ -10,7 +10,7 @@ public class OutgoingRecordData extends OperateRecordData {
 
 	@Override
 	public void loadData() {
-		//²âÊÔÊı¾İ
+		//æµ‹è¯•æ•°æ®
 		
 		for (int i = 0; i < 10; i++) {
 			contents.add(new OutgoingRecord(""+i,

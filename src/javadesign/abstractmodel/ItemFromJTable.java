@@ -5,7 +5,7 @@ import java.util.Vector;
 
 public class ItemFromJTable extends Vector<Object>{
 	private static final long serialVersionUID = 1L;
-	protected String note; // ±¸×¢ 
+	protected String note; // å¤‡æ³¨ 
 
 	public void setNote(String note) {
 		this.note = note;

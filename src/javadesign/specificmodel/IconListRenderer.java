@@ -23,7 +23,7 @@ public class IconListRenderer extends JButton implements
 		ItemFromJList item = (ItemFromJList) value;
 		float size = list.getFont().getSize();
 
-		// ¼ÓÈë¿í¶ÈÎª5µÄ¿Õ°×±ß¿ò
+		// åŠ å…¥å®½åº¦ä¸º5çš„ç©ºç™½è¾¹æ¡†
 		setBorder(new EmptyBorder(5, 5, 5, 5));
 		if (item.getMouseStatus() == 0 && isSelected) {
 			setFont(list.getFont().deriveFont(size + 3));

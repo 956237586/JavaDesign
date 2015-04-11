@@ -20,7 +20,7 @@ public class AddWindow extends Window implements KeyListener {
 		this.createWindow = createWindow;
 		status.getWindows().put("AddWindow", this);
 
-		setTitle("Ìí¼Ó");
+		setTitle("æ·»åŠ ");
 		
 		setResizable(false);
 		getContentPane().setLayout(null);
@@ -50,7 +50,7 @@ public class AddWindow extends Window implements KeyListener {
 			if (properties[i].equals(""))
 				properties[i] = "0";
 		}
-		createWindow.addItem(properties);// Êı¾İ»Ø´«¸øÉÏÒ»¸ö´°¿Ú
+		createWindow.addItem(properties);// æ•°æ®å›ä¼ ç»™ä¸Šä¸€ä¸ªçª—å£
 	}
 
 	@Override

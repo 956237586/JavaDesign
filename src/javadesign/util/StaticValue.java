@@ -5,23 +5,23 @@ import java.awt.Font;
 public class StaticValue {
 	public static final int DEFAULT_WIDTH = 1024;
 	public static final int DEFAULT_HEIGHT = 768;
-	public static final int DEFAULT_BUTTON_NUM = 4;//GeneralFrameÄ¬ÈÏ°´Å¥¸öÊı
+	public static final int DEFAULT_BUTTON_NUM = 4;//GeneralFrameé»˜è®¤æŒ‰é’®ä¸ªæ•°
 	public static final Font DEFAULT_FONT = new Font("SimSun", Font.PLAIN, 15);
 	public static final int INDEX_GOOD_ID = 0; // ID 0
-	public static final int INDEX_GOOD_NAME = 1; // Ãû³Æ 1
-	public static final int INDEX_GOOD_CATEGORY = 2; // Àà±ğ 2
-	public static final int INDEX_GOOD_QUANTITY = 3; // ÊıÁ¿ 3
-	public static final int INDEX_GOOD_UNIT_PRICE = 4; // µ¥¼Û 4
-	public static final int INDEX_GOOD_TOTAL_PRICE = 5; // ×Ü¼Û 5
-	public static final int INDEX_GOOD_NOTE = 6; // ±¸×¢ 6
-	public static final int INDEX_OPERATOR = 7;	//²Ù×÷Ô±ĞÕÃû 7
-	public static final int INDEX_INCOMING_NO = 8; //Èë¿âµ¥ºÅ 8
-	public static final int INDEX_OUTGOING_NO = 9; //³ö¿âµ¥ºÅ 9
+	public static final int INDEX_GOOD_NAME = 1; // åç§° 1
+	public static final int INDEX_GOOD_CATEGORY = 2; // ç±»åˆ« 2
+	public static final int INDEX_GOOD_QUANTITY = 3; // æ•°é‡ 3
+	public static final int INDEX_GOOD_UNIT_PRICE = 4; // å•ä»· 4
+	public static final int INDEX_GOOD_TOTAL_PRICE = 5; // æ€»ä»· 5
+	public static final int INDEX_GOOD_NOTE = 6; // å¤‡æ³¨ 6
+	public static final int INDEX_OPERATOR = 7;	//æ“ä½œå‘˜å§“å 7
+	public static final int INDEX_INCOMING_NO = 8; //å…¥åº“å•å· 8
+	public static final int INDEX_OUTGOING_NO = 9; //å‡ºåº“å•å· 9
 	public static final String[] GOODS_COLUMN_NAMES = 
-		{ "»õÎïID", "Ãû³Æ", "Àà±ğ", "¿â´æ", "µ¥¼Û", "×Ü¼Û", "±¸×¢", };
+		{ "è´§ç‰©ID", "åç§°", "ç±»åˆ«", "åº“å­˜", "å•ä»·", "æ€»ä»·", "å¤‡æ³¨", };
 	public static final String[] OUTGOING_COLUMN_NAMES = 
-		{"³ö¿âµ¥ºÅ","²Ù×÷Ô±", "»õÎïID", "Ãû³Æ", "Àà±ğ", "ÊıÁ¿", "µ¥¼Û", "×Ü¼Û", "±¸×¢", };
+		{"å‡ºåº“å•å·","æ“ä½œå‘˜", "è´§ç‰©ID", "åç§°", "ç±»åˆ«", "æ•°é‡", "å•ä»·", "æ€»ä»·", "å¤‡æ³¨", };
 	public static final String[] INCOMING_COLUMN_NAMES = 
-		{"Èë¿âµ¥ºÅ","²Ù×÷Ô±", "»õÎïID", "Ãû³Æ", "Àà±ğ", "ÊıÁ¿", "µ¥¼Û", "×Ü¼Û", "±¸×¢", };
+		{"å…¥åº“å•å·","æ“ä½œå‘˜", "è´§ç‰©ID", "åç§°", "ç±»åˆ«", "æ•°é‡", "å•ä»·", "æ€»ä»·", "å¤‡æ³¨", };
 
 }

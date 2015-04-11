@@ -11,7 +11,7 @@ public class ItemFromJList {
 
 	private String iconPath;
 	private String text;
-	private int mouseStatus;// 0悬停 1按下 2松开
+	private int mouseStatus;// 0鎮仠 1鎸変笅 2鏉惧紑
 
 	public ItemFromJList() {
 
@@ -58,11 +58,11 @@ public class ItemFromJList {
 		list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		DefaultListModel<ItemFromJList> listModel = new DefaultListModel<ItemFromJList>();
 		list.setModel(listModel);
-		list.setOpaque(false); // 透明显示
+		list.setOpaque(false); // 閫忔槑鏄剧ず
 
-		ItemFromJList item1 = new ItemFromJList("res/icon1.png", "这是测试文字1");
-		ItemFromJList item2 = new ItemFromJList("res/icon2.png", "这是测试文字2");
-		ItemFromJList item3 = new ItemFromJList("res/icon3.png", "这是测试文字3");
+		ItemFromJList item1 = new ItemFromJList("res/icon1.png", "杩欐槸娴嬭瘯鏂囧瓧1");
+		ItemFromJList item2 = new ItemFromJList("res/icon2.png", "杩欐槸娴嬭瘯鏂囧瓧2");
+		ItemFromJList item3 = new ItemFromJList("res/icon3.png", "杩欐槸娴嬭瘯鏂囧瓧3");
 
 		listModel.addElement(item1);
 		listModel.addElement(item2);

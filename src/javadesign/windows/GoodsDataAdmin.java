@@ -18,7 +18,7 @@ public class GoodsDataAdmin extends GeneralFrame implements TableModelListener,
 	public GoodsDataAdmin() {
 		super();
 		status.getWindows().put("GoodsDataAdmin", this);
-		setTitle("»õÎï×ÊÁÏ¹ÜÀí");
+		setTitle("è´§ç‰©èµ„æ–™ç®¡ç†");
 		addWindowFocusListener(this);
 		loadData();
 	}
@@ -57,7 +57,7 @@ public class GoodsDataAdmin extends GeneralFrame implements TableModelListener,
 			data.addRow(new Good(id, name, category, quantity, unitPrice, note));
 			super.addItem(properties);
 		} else {
-			Util.alertError("idÖØ¸´£¬ÇëÖØĞÂÊäÈë");
+			Util.alertError("idé‡å¤ï¼Œè¯·é‡æ–°è¾“å…¥");
 		}
 	}
 
@@ -66,7 +66,7 @@ public class GoodsDataAdmin extends GeneralFrame implements TableModelListener,
 		if (event.getColumn() == StaticValue.INDEX_GOOD_QUANTITY
 				|| event.getColumn() == StaticValue.INDEX_GOOD_UNIT_PRICE) {
 			double stock = 0;
-			double unitPrice = 0;// ×Ô¶¯¼ÆËã×ÜÖµ
+			double unitPrice = 0;// è‡ªåŠ¨è®¡ç®—æ€»å€¼
 			try {
 				stock = Double.parseDouble(""
 						+ data.getValueAt(event.getFirstRow(),
@@ -75,7 +75,7 @@ public class GoodsDataAdmin extends GeneralFrame implements TableModelListener,
 						+ data.getValueAt(event.getFirstRow(),
 								StaticValue.INDEX_GOOD_UNIT_PRICE));
 			} catch (NumberFormatException e) {
-				e.printStackTrace();// ·ÀÖ¹ÊäÈëµÄ²»ÊÇÊıÖµ
+				e.printStackTrace();// é˜²æ­¢è¾“å…¥çš„ä¸æ˜¯æ•°å€¼
 			}
 			double newTotalPrice = stock * unitPrice;
 			data.setValueAt(newTotalPrice, event.getFirstRow(),
@@ -84,7 +84,7 @@ public class GoodsDataAdmin extends GeneralFrame implements TableModelListener,
 		data.saveData();
 	}
 
-	// ²âÊÔÖ÷³ÌĞò
+	// æµ‹è¯•ä¸»ç¨‹åº
 	public static void main(String[] args) {
 		new GoodsDataAdmin();
 	}

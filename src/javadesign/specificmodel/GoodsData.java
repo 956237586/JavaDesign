@@ -13,7 +13,7 @@ public class GoodsData extends Data {
 
 	@Override
 	public void loadData() {
-		// ²âÊÔÊı¾İ
+		// æµ‹è¯•æ•°æ®
 		System.out.println();
 		for (int i = 0; i < 10; i++) {
 			contents.add(new Good(i,

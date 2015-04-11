@@ -28,28 +28,28 @@ public class MenuWindow extends Window {
 
 	public MenuWindow() {
 		super("res/bg.png");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// Ö÷´°¿ÚÄ¬ÈÏÍË³ö²Ù×÷Îª¹Ø±Õ
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// ä¸»çª—å£é»˜è®¤é€€å‡ºæ“ä½œä¸ºå…³é—­
 		status.getWindows().put("MenuWindow", this);
 
-		setTitle("»õÎï¹ÜÀíÏµÍ³");
+		setTitle("è´§ç‰©ç®¡ç†ç³»ç»Ÿ");
 		setResizable(true);
 		
 
-		// ¼ÓÔØÓÃ»§½çÃæ£¬Ìí¼Ó¼àÌıÆ÷¼ÓÔØ²»Í¬½çÃæÄ£¿é
-		// ²»Í¬Ä£¿é·Ö±ğ¶ÁÈ¡¿â´æ¼ÇÂ¼¡¢Èë¿âµ¥¼ÇÂ¼¡¢³ö¿âµ¥¼ÇÂ¼Êı¾İ
-		// (¿ÉÒÔÍøÂç´«Êä»òÕß±¾µØÎÄ¼ş¶ÁĞ´)
-		welcome = new JLabel("sorry£¡Äú»¹Ã»ÓĞµÇÂ¼Å¶-_-||");
+		// åŠ è½½ç”¨æˆ·ç•Œé¢ï¼Œæ·»åŠ ç›‘å¬å™¨åŠ è½½ä¸åŒç•Œé¢æ¨¡å—
+		// ä¸åŒæ¨¡å—åˆ†åˆ«è¯»å–åº“å­˜è®°å½•ã€å…¥åº“å•è®°å½•ã€å‡ºåº“å•è®°å½•æ•°æ®
+		// (å¯ä»¥ç½‘ç»œä¼ è¾“æˆ–è€…æœ¬åœ°æ–‡ä»¶è¯»å†™)
+		welcome = new JLabel("sorryï¼æ‚¨è¿˜æ²¡æœ‰ç™»å½•å“¦-_-||");
 		welcome.setFont(StaticValue.DEFAULT_FONT);
 		welcome.setBounds(10, 10, 853, 44);
 		getContentPane().add(welcome);
 
 		list = new JList<ItemFromJList>();
 		list.addMouseMotionListener(new MouseMotionAdapter() {
-			// Ôö¼ÓÌõÄ¿·Å´óµÄ¶¯»­Ğ§¹û
+			// å¢åŠ æ¡ç›®æ”¾å¤§çš„åŠ¨ç”»æ•ˆæœ
 			@Override
 			public void mouseMoved(MouseEvent e) {
 				currentindex = list.locationToIndex(e.getPoint());
-				// ×¢£ºÓÉÓÚ·ºĞÍµÄÊ¹ÓÃ£¬²»±ØÒª×ª»»»ñÈ¡µ½µÄÀàĞÍ
+				// æ³¨ï¼šç”±äºæ³›å‹çš„ä½¿ç”¨ï¼Œä¸å¿…è¦è½¬æ¢è·å–åˆ°çš„ç±»å‹
 				currentItem = list.getModel().getElementAt(currentindex);
 				currentItem.setMouseStatus(0);
 				list.setSelectedIndex(currentindex);
@@ -68,22 +68,22 @@ public class MenuWindow extends Window {
 			public void mouseReleased(MouseEvent e) {
 				currentItem.setMouseStatus(0);
 				list.repaint();
-				// ÅĞ¶ÏÓÃ»§Ñ¡ÔñµÄ¹¦ÄÜ
+				// åˆ¤æ–­ç”¨æˆ·é€‰æ‹©çš„åŠŸèƒ½
 
 				switch (currentindex) {
-				case 0:// »õÎï×ÊÁÏ¹ÜÀí
+				case 0:// è´§ç‰©èµ„æ–™ç®¡ç†
 					if (isNotOpen("GoodsDataAdmin"))
 						new GoodsDataAdmin();
 					break;
-				case 1:// »õÎïÈë¿â¹ÜÀí
+				case 1:// è´§ç‰©å…¥åº“ç®¡ç†
 					if (isNotOpen("IncomingRecordAdmin"))
 						new IncomingRecordAdmin();
 					break;
-				case 2:// »õÎï³ö¿â¹ÜÀí
+				case 2:// è´§ç‰©å‡ºåº“ç®¡ç†
 					if (isNotOpen("OutgoingRecordAdmin"))
 						new OutgoingRecordAdmin();
 					break;
-				case 3:// ÓÃ»§¹ÜÀí
+				case 3:// ç”¨æˆ·ç®¡ç†
 					System.out.println(3);
 					break;
 				default:
@@ -103,12 +103,12 @@ public class MenuWindow extends Window {
 		list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		DefaultListModel<ItemFromJList> listModel = new DefaultListModel<ItemFromJList>();
 		list.setModel(listModel);
-		list.setOpaque(false); // Í¸Ã÷ÏÔÊ¾
+		list.setOpaque(false); // é€æ˜æ˜¾ç¤º
 
-		ItemFromJList item1 = new ItemFromJList("res/icon1.png", "»õÎï×ÊÁÏ¹ÜÀí");
-		ItemFromJList item2 = new ItemFromJList("res/icon2.png", "»õÎïÈë¿â¹ÜÀí");
-		ItemFromJList item3 = new ItemFromJList("res/icon3.png", "»õÎï³ö¿â¹ÜÀí");
-		ItemFromJList item4 = new ItemFromJList("res/icon3.png", "ÓÃ»§ĞÅÏ¢¹ÜÀí");
+		ItemFromJList item1 = new ItemFromJList("res/icon1.png", "è´§ç‰©èµ„æ–™ç®¡ç†");
+		ItemFromJList item2 = new ItemFromJList("res/icon2.png", "è´§ç‰©å…¥åº“ç®¡ç†");
+		ItemFromJList item3 = new ItemFromJList("res/icon3.png", "è´§ç‰©å‡ºåº“ç®¡ç†");
+		ItemFromJList item4 = new ItemFromJList("res/icon3.png", "ç”¨æˆ·ä¿¡æ¯ç®¡ç†");
 
 		listModel.addElement(item1);
 		listModel.addElement(item2);
@@ -135,9 +135,9 @@ public class MenuWindow extends Window {
 	}
 
 	public void LoginSucceed() {
-		welcome.setText("¡ñ¨Œ¡ñµÇÂ½³É¹¦£¬" + status.getLoginUsername()
-				+ ",»¶Ó­ÄúµÄÊ¹ÓÃ\\(^o^)/" + "Çëµã»÷ÄúÒªÊ¹ÓÃµÄ¹¦ÄÜ");
-		setup();// ÏÔÊ¾´°¿Ú
+		welcome.setText("â—â–½â—ç™»é™†æˆåŠŸï¼Œ" + status.getLoginUsername()
+				+ ",æ¬¢è¿æ‚¨çš„ä½¿ç”¨\\(^o^)/" + "è¯·ç‚¹å‡»æ‚¨è¦ä½¿ç”¨çš„åŠŸèƒ½");
+		setup();// æ˜¾ç¤ºçª—å£
 		// this.repaint();
 		// Util.displayAtCenter(this);
 	}

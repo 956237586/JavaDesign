@@ -22,7 +22,7 @@ public class Data extends DefaultTableModel {
 	public void addItem(ItemFromJTable item) {
 		if (item != null)
 			contents.add(item);
-		System.out.println("Ìí¼Ó³É¹¦£¡");
+		System.out.println("æ·»åŠ æˆåŠŸï¼");
 		saveData();
 	}
 

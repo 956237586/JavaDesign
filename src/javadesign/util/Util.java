@@ -8,20 +8,20 @@ import javax.swing.JOptionPane;
 
 public class Util {
 	public static void displayAtCenter(JFrame jFrame) {
-		// Æô¶¯ÉèÖÃÎª¾ÓÖĞ
-		int windowWidth = jFrame.getWidth(); // »ñµÃ´°¿Ú¿í
-		int windowHeight = jFrame.getHeight(); // »ñµÃ´°¿Ú¸ß
+		// å¯åŠ¨è®¾ç½®ä¸ºå±…ä¸­
+		int windowWidth = jFrame.getWidth(); // è·å¾—çª—å£å®½
+		int windowHeight = jFrame.getHeight(); // è·å¾—çª—å£é«˜
 		Toolkit kit = Toolkit.getDefaultToolkit();
-		Dimension screenSize = kit.getScreenSize(); // »ñÈ¡ÆÁÄ»µÄ³ß´ç
-		int screenWidth = screenSize.width; // »ñÈ¡ÆÁÄ»µÄ¿í
-		int screenHeight = screenSize.height; // »ñÈ¡ÆÁÄ»µÄ¸ß
+		Dimension screenSize = kit.getScreenSize(); // è·å–å±å¹•çš„å°ºå¯¸
+		int screenWidth = screenSize.width; // è·å–å±å¹•çš„å®½
+		int screenHeight = screenSize.height; // è·å–å±å¹•çš„é«˜
 		jFrame.setLocation((screenWidth - windowWidth) / 2,
-				(screenHeight - windowHeight) / 2); // ÉèÖÃ´°¿Ú¾ÓÖĞÏÔÊ¾
+				(screenHeight - windowHeight) / 2); // è®¾ç½®çª—å£å±…ä¸­æ˜¾ç¤º
 		jFrame.setVisible(true);
 	}
 
 	public static void alertError(String message) {
-		JOptionPane.showMessageDialog(null, message, "´íÎó",
+		JOptionPane.showMessageDialog(null, message, "é”™è¯¯",
 				JOptionPane.ERROR_MESSAGE);
 	}
 

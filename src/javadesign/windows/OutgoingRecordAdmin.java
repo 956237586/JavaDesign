@@ -14,7 +14,7 @@ public class OutgoingRecordAdmin extends OperateWindow {
 	public OutgoingRecordAdmin() {
 		super();
 		status.getWindows().put("OutgoingRecordAdmin", this);
-		setTitle("»õÎï³ö¿â¹ÜÀí");
+		setTitle("è´§ç‰©å‡ºåº“ç®¡ç†");
 	}
 
 	@Override
@@ -39,11 +39,11 @@ public class OutgoingRecordAdmin extends OperateWindow {
 						quantity, note));
 				super.addItem(properties);
 			} else {
-				Util.alertError("¸ÃÖÖ»õÎï¿â´æ²»×ã£¬Çë½ø»õºóÔÙ³ö»õ£¡");
+				Util.alertError("è¯¥ç§è´§ç‰©åº“å­˜ä¸è¶³ï¼Œè¯·è¿›è´§åå†å‡ºè´§ï¼");
 				showAddWindow();
 			}
 		} else {
-			Util.alertError("¸ÃÖÖ»õÎï²»´æÔÚ£¬²éÖ¤ºóÖØÊÔ£¡");
+			Util.alertError("è¯¥ç§è´§ç‰©ä¸å­˜åœ¨ï¼ŒæŸ¥è¯åé‡è¯•ï¼");
 			showAddWindow();
 		}
 	}

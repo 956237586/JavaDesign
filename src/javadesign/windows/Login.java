@@ -25,34 +25,34 @@ public class Login extends Window {
 	private JPasswordField pwdField_pwd;
 
 	public Login() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// Ö÷´°¿ÚÄ¬ÈÏÍË³ö²Ù×÷Îª¹Ø±Õ
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// ä¸»çª—å£é»˜è®¤é€€å‡ºæ“ä½œä¸ºå…³é—­
 		status.getWindows().put("LoginWindow", this);
-		setTitle("µÇÂ½");
+		setTitle("ç™»é™†");
 		setResizable(false);
 		getContentPane().setLayout(null);
 
-		// ¶ÁÈ¡ÓÃ»§Êı¾İ£¬¼ÓÔØÖ÷µÇÂ¼´°¿Ú£¬Èç¹ûµÇÂ¼³É¹¦¼ÌĞø¼ÓÔØÖ÷²Ù×÷´°¿Ú
+		// è¯»å–ç”¨æˆ·æ•°æ®ï¼ŒåŠ è½½ä¸»ç™»å½•çª—å£ï¼Œå¦‚æœç™»å½•æˆåŠŸç»§ç»­åŠ è½½ä¸»æ“ä½œçª—å£
 
-		// ÌáÊ¾±êÇ©
-		JLabel label_username = new JLabel("ÓÃ»§Ãû£º");
+		// æç¤ºæ ‡ç­¾
+		JLabel label_username = new JLabel("ç”¨æˆ·åï¼š");
 		label_username.setFont(new Font("SimSun", Font.PLAIN, 12));
 		label_username.setHorizontalAlignment(SwingConstants.RIGHT);
 		label_username.setBounds(100, 74, 64, 15);
 		getContentPane().add(label_username);
 
-		JLabel label_password = new JLabel("ÃÜÂë£º");
+		JLabel label_password = new JLabel("å¯†ç ï¼š");
 		label_password.setFont(new Font("SimSun", Font.PLAIN, 12));
 		label_password.setHorizontalAlignment(SwingConstants.RIGHT);
 		label_password.setBounds(116, 115, 48, 15);
 		getContentPane().add(label_password);
 
-		// ÓÃ»§Ãû±à¼­¿ò
+		// ç”¨æˆ·åç¼–è¾‘æ¡†
 		textField_uname = new JTextField();
 		textField_uname.addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyPressed(KeyEvent arg0) {
 				if (arg0.getKeyCode() == 10) {
-					// Ï¸½Ú´¦Àí£¬°´»Ø³µ¼üÌøµ½ÃÜÂë±à¼­¿ò
+					// ç»†èŠ‚å¤„ç†ï¼ŒæŒ‰å›è½¦é”®è·³åˆ°å¯†ç ç¼–è¾‘æ¡†
 					pwdField_pwd.requestFocus();
 				}
 			}
@@ -61,13 +61,13 @@ public class Login extends Window {
 		getContentPane().add(textField_uname);
 		textField_uname.setColumns(10);
 
-		// ÃÜÂë±à¼­¿ò
+		// å¯†ç ç¼–è¾‘æ¡†
 		pwdField_pwd = new JPasswordField();
 		pwdField_pwd.addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyPressed(KeyEvent e) {
 				if (e.getKeyCode() == 10) {
-					// Ï¸½Ú´¦Àí£¬°´»Ø³µ¼üÈ·¶¨µÇÂ½£¬µÈÍ¬µã»÷µÇÂ½°´Å¥
+					// ç»†èŠ‚å¤„ç†ï¼ŒæŒ‰å›è½¦é”®ç¡®å®šç™»é™†ï¼Œç­‰åŒç‚¹å‡»ç™»é™†æŒ‰é’®
 					UserLogin();
 				}
 			}
@@ -76,8 +76,8 @@ public class Login extends Window {
 		pwdField_pwd.setBounds(170, 112, 124, 21);
 		getContentPane().add(pwdField_pwd);
 
-		// µÇÂ½°´Å¥
-		JButton btn_login = new JButton("µÇÂ½");
+		// ç™»é™†æŒ‰é’®
+		JButton btn_login = new JButton("ç™»é™†");
 		btn_login.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
@@ -87,37 +87,37 @@ public class Login extends Window {
 		btn_login.setBounds(131, 163, 83, 33);
 		getContentPane().add(btn_login);
 
-		// ÖØÖÃ°´Å¥
-		JButton btn_reset = new JButton("ÖØÖÃ");
+		// é‡ç½®æŒ‰é’®
+		JButton btn_reset = new JButton("é‡ç½®");
 		btn_reset.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				textField_uname.setText(""); // Çå¿ÕÓÃ»§Ô­ÓĞÊäÈë
+				textField_uname.setText(""); // æ¸…ç©ºç”¨æˆ·åŸæœ‰è¾“å…¥
 				pwdField_pwd.setText("");
-				textField_uname.requestFocus(); // ÓÃ»§Ãû±à¼­¿ò»ñÈ¡½¹µã£¬
-												// ·½±ãÓÃ»§ÖØĞÂÊäÈë
+				textField_uname.requestFocus(); // ç”¨æˆ·åç¼–è¾‘æ¡†è·å–ç„¦ç‚¹ï¼Œ
+												// æ–¹ä¾¿ç”¨æˆ·é‡æ–°è¾“å…¥
 			}
 		});
 		btn_reset.setBounds(224, 163, 83, 33);
 		getContentPane().add(btn_reset);
 
-		// ÉèÖÃtab¼ü½¹µãÏÈºóË³Ğò
+		// è®¾ç½®tabé”®ç„¦ç‚¹å…ˆåé¡ºåº
 		setFocusTraversalPolicy(new FocusTraversalOnArray(new Component[] {
 				textField_uname, pwdField_pwd, btn_login, btn_reset }));
 
-		// ÉèÖÃÌØÊâµÄ´óĞ¡£¬¸²¸Ç¸¸ÀàµÄÄ¬ÈÏ´óĞ¡
+		// è®¾ç½®ç‰¹æ®Šçš„å¤§å°ï¼Œè¦†ç›–çˆ¶ç±»çš„é»˜è®¤å¤§å°
 		setSize(427, 293);
 		setup();
 	}
 
 	public void UserLogin() {
-		// µÇÂ½´¦Àí
+		// ç™»é™†å¤„ç†
 		String username = textField_uname.getText().trim();
 		char[] passwordChar = pwdField_pwd.getPassword();
 		String password = new StringBuilder().append(passwordChar).toString();
 
 		if (username.equals("") || password.equals("")) {
-			JOptionPane.showMessageDialog(this, "¡ñ©n¡ñÓÃ»§Ãû»òÃÜÂëÎª¿Õ£¬ÇëÖØĞÂÊäÈë¡£", "´íÎó",
+			JOptionPane.showMessageDialog(this, "â—ï¹â—ç”¨æˆ·åæˆ–å¯†ç ä¸ºç©ºï¼Œè¯·é‡æ–°è¾“å…¥ã€‚", "é”™è¯¯",
 					JOptionPane.WARNING_MESSAGE);
 			textField_uname.requestFocus();
 		} else {
