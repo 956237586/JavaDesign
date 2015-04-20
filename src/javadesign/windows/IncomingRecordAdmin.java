@@ -15,6 +15,7 @@ public class IncomingRecordAdmin extends OperateWindow {
 		super();
 		status.getWindows().put("IncomingRecordAdmin", this);
 		setTitle("货物入库管理");
+		
 	}
 
 	@Override
@@ -41,9 +42,5 @@ public class IncomingRecordAdmin extends OperateWindow {
 			Util.alertError("该种货物不存在，查证后重试！");
 			showAddWindow();
 		}
-	}
-
-	public static void main(String[] args) {
-		new IncomingRecordAdmin();
 	}
 }

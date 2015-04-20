@@ -4,6 +4,8 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 import java.util.HashMap;
 
 import javadesign.abstractmodel.Data;
@@ -16,7 +18,8 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
 
-public class GeneralFrame extends Window implements MouseListener {
+public class GeneralFrame extends Window implements MouseListener,
+		WindowListener {
 	private static final long serialVersionUID = 1L;
 	protected int btnNum;
 	protected int currentItemIndex;
@@ -43,6 +46,7 @@ public class GeneralFrame extends Window implements MouseListener {
 				jScrollPane.setSize(getWidth() - 30, getHeight() - 100);
 			}
 		});
+		addWindowListener(this);
 
 		getContentPane().setLayout(null);
 
@@ -67,7 +71,7 @@ public class GeneralFrame extends Window implements MouseListener {
 		btnDel.setText("删除");
 		btnSave.setText("保存");
 		btnRefresh.setText("刷新");
-		
+
 		for (int i = 0; i < 4; i++) {
 			jButtons.get(i).addMouseListener(this);
 		}
@@ -95,20 +99,21 @@ public class GeneralFrame extends Window implements MouseListener {
 		System.gc();
 	}
 
-	public void showAddWindow(){
+	public void showAddWindow() {
 	}
-	
+
 	public void loadData() {
 		System.out.println("super load");
+		data.loadData();
 		setup();
 	}
 
 	public void reFresh() {
 		System.out.println("reFresh reFresh");
-		//table.revalidate();
+		// table.revalidate();
 		table.repaint();
 	}
-	
+
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		JButton clickedButton = (JButton) e.getSource();
@@ -121,6 +126,11 @@ public class GeneralFrame extends Window implements MouseListener {
 		} else if (clickedButton.equals(btnRefresh)) {
 			reFresh();
 		}
+	}
+
+	@Override
+	public void windowClosing(WindowEvent e) {
+		data.saveData();// 关闭时自动保存数据
 	}
 
 	@Override
@@ -137,6 +147,31 @@ public class GeneralFrame extends Window implements MouseListener {
 
 	@Override
 	public void mouseReleased(MouseEvent e) {
+	}
+
+	@Override
+	public void windowActivated(WindowEvent e) {
+	}
+
+	@Override
+	public void windowClosed(WindowEvent e) {
+	}
+
+	@Override
+	public void windowDeactivated(WindowEvent e) {
+
+	}
+
+	@Override
+	public void windowDeiconified(WindowEvent e) {
+	}
+
+	@Override
+	public void windowIconified(WindowEvent e) {
+	}
+
+	@Override
+	public void windowOpened(WindowEvent e) {
 	}
 
 }

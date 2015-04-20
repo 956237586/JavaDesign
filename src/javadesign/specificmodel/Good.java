@@ -71,28 +71,27 @@ public class Good extends ItemFromJTable {
 	}
 
 	public int getId() {
-		return id;
+		return (Integer) get(0);
 	}
 
 	public String getName() {
-		return name;
+		return (String) get(1);
 	}
 
 	public String getCategory() {
-		return category;
+		return (String) get(2);
 	}
 
 	public int getQuantity() {
-		return quantity;
+		return Integer.parseInt(get(3)+"");
 	}
 
 	public double getUnitPrice() {
-		return unitPrice;
+		return (Double) get(4);
 	}
 
 	public double getTotalPrice() {
-		return totalPrice;
+		return  (Double) get(5);
 	}
-
 
 }

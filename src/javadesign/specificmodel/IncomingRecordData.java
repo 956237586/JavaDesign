@@ -1,5 +1,7 @@
 package javadesign.specificmodel;
 
+import java.io.File;
+
 import javadesign.util.StaticValue;
 
 public class IncomingRecordData extends OperateRecordData {
@@ -10,7 +12,10 @@ public class IncomingRecordData extends OperateRecordData {
 
 	@Override
 	public void loadData() {
+		dataFile = new File(StaticValue.DATA_INCOMING);
+		super.loadData();
 		// 测试数据
+		/*/
 		for (int i = 0; i < 10; i++) {
 			contents.add(new IncomingRecord(""+i,
 					"hyl" + i,
@@ -18,6 +23,7 @@ public class IncomingRecordData extends OperateRecordData {
 					(int)(200 * Math.random()),
 					"note " + i));
 		}
+		//*/
 		/*
 		 * contents.add(new IncomingRecord("1", "5555", 0, 50, "note 1"));
 		 * contents.add(new IncomingRecord("2", "5555", 1, 100, "note135 1"));
@@ -35,6 +41,7 @@ public class IncomingRecordData extends OperateRecordData {
 	
 	@Override
 	public void saveData() {
+		super.saveData();
 		System.out.println("save IncomingRecordData");
 	}
 

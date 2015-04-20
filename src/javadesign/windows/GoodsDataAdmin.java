@@ -83,15 +83,9 @@ public class GoodsDataAdmin extends GeneralFrame implements TableModelListener,
 		}
 		data.saveData();
 	}
-
-	// 测试主程序
-	public static void main(String[] args) {
-		new GoodsDataAdmin();
-	}
-
+	
 	@Override
 	public void windowGainedFocus(WindowEvent e) {
-		System.out.println(111121321);
 		reFresh();
 	}
 

@@ -10,6 +10,7 @@ public class OperateWindow extends GeneralFrame{
 	protected SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMddHHmmss");
 	public OperateWindow() {
 		loadData();
+		table.getColumnModel().getColumn(0).setPreferredWidth(140);
 	}
 
 	@Override

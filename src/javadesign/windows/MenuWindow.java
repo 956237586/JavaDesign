@@ -11,7 +11,10 @@ import javax.swing.DefaultListModel;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JList;
+import javax.swing.JOptionPane;
 import javax.swing.ListSelectionModel;
+
+import com.sun.corba.se.impl.javax.rmi.CORBA.Util;
 
 import java.awt.event.MouseMotionAdapter;
 import java.awt.event.MouseEvent;
@@ -83,8 +86,8 @@ public class MenuWindow extends Window {
 					if (isNotOpen("OutgoingRecordAdmin"))
 						new OutgoingRecordAdmin();
 					break;
-				case 3:// 用户管理
-					System.out.println(3);
+				case 3:// 退出系统
+						System.exit(0);
 					break;
 				default:
 					break;
@@ -108,7 +111,7 @@ public class MenuWindow extends Window {
 		ItemFromJList item1 = new ItemFromJList("res/icon1.png", "货物资料管理");
 		ItemFromJList item2 = new ItemFromJList("res/icon2.png", "货物入库管理");
 		ItemFromJList item3 = new ItemFromJList("res/icon3.png", "货物出库管理");
-		ItemFromJList item4 = new ItemFromJList("res/icon3.png", "用户信息管理");
+		ItemFromJList item4 = new ItemFromJList("res/icon3.png", "退出管理系统");
 
 		listModel.addElement(item1);
 		listModel.addElement(item2);

@@ -1,5 +1,7 @@
 package javadesign.specificmodel;
 
+import java.io.File;
+
 import javadesign.abstractmodel.Data;
 import javadesign.abstractmodel.ItemFromJTable;
 import javadesign.util.StaticValue;
@@ -13,7 +15,10 @@ public class GoodsData extends Data {
 
 	@Override
 	public void loadData() {
+		dataFile=new File(StaticValue.DATA_GOOD);
+		super.loadData();
 		// 测试数据
+		/*
 		System.out.println();
 		for (int i = 0; i < 10; i++) {
 			contents.add(new Good(i,
@@ -24,6 +29,7 @@ public class GoodsData extends Data {
 					"note " + i));
 
 		}
+		*/
 		/*/
 		contents.add(new Good(1, "002", "category2", 100, 225, "note135 1"));
 		contents.add(new Good(2, "02456450", "category1", 500, 200, "n453ote 1"));
@@ -49,7 +55,7 @@ public class GoodsData extends Data {
 	
 	@Override
 	public void saveData() {
-		System.out.println("save good data");
+		super.saveData();
 	}
 
 }

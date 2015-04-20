@@ -23,5 +23,8 @@ public class StaticValue {
 		{"出库单号","操作员", "货物ID", "名称", "类别", "数量", "单价", "总价", "备注", };
 	public static final String[] INCOMING_COLUMN_NAMES = 
 		{"入库单号","操作员", "货物ID", "名称", "类别", "数量", "单价", "总价", "备注", };
-
+	public static final String DATA_USER = "userdata.dat";
+	public static final String DATA_GOOD = "gooddata.dat";
+	public static final String DATA_INCOMING = "incomingdata.dat";
+	public static final String DATA_OUTGOING = "outgoingdata.dat";
 }

@@ -1,48 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0df715be-8301-4d26-84d7-9eb513741ad1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/HYL.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/windows/AddWindow.class" afterPath="$PROJECT_DIR$/bin/javadesign/windows/AddWindow.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/abstractmodel/Data.class" afterPath="$PROJECT_DIR$/bin/javadesign/abstractmodel/Data.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/org/eclipse/wb/swing/FocusTraversalOnArray.class" afterPath="$PROJECT_DIR$/bin/org/eclipse/wb/swing/FocusTraversalOnArray.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/specificmodel/GeneralFrame$1.class" afterPath="$PROJECT_DIR$/bin/javadesign/specificmodel/GeneralFrame$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/specificmodel/GeneralFrame.class" afterPath="$PROJECT_DIR$/bin/javadesign/specificmodel/GeneralFrame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/specificmodel/Good.class" afterPath="$PROJECT_DIR$/bin/javadesign/specificmodel/Good.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/specificmodel/GoodsData.class" afterPath="$PROJECT_DIR$/bin/javadesign/specificmodel/GoodsData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/windows/GoodsDataAdmin.class" afterPath="$PROJECT_DIR$/bin/javadesign/windows/GoodsDataAdmin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/specificmodel/IconListRenderer.class" afterPath="$PROJECT_DIR$/bin/javadesign/specificmodel/IconListRenderer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/specificmodel/IncomingRecord.class" afterPath="$PROJECT_DIR$/bin/javadesign/specificmodel/IncomingRecord.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/windows/IncomingRecordAdmin.class" afterPath="$PROJECT_DIR$/bin/javadesign/windows/IncomingRecordAdmin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/specificmodel/IncomingRecordData.class" afterPath="$PROJECT_DIR$/bin/javadesign/specificmodel/IncomingRecordData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/abstractmodel/ItemFromJList.class" afterPath="$PROJECT_DIR$/bin/javadesign/abstractmodel/ItemFromJList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/abstractmodel/ItemFromJTable.class" afterPath="$PROJECT_DIR$/bin/javadesign/abstractmodel/ItemFromJTable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/windows/Login$1.class" afterPath="$PROJECT_DIR$/bin/javadesign/windows/Login$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/windows/Login$2.class" afterPath="$PROJECT_DIR$/bin/javadesign/windows/Login$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/windows/Login$3.class" afterPath="$PROJECT_DIR$/bin/javadesign/windows/Login$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/windows/Login$4.class" afterPath="$PROJECT_DIR$/bin/javadesign/windows/Login$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/windows/Login.class" afterPath="$PROJECT_DIR$/bin/javadesign/windows/Login.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/main/Main.class" afterPath="$PROJECT_DIR$/bin/javadesign/main/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/windows/MenuWindow$1.class" afterPath="$PROJECT_DIR$/bin/javadesign/windows/MenuWindow$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/windows/MenuWindow$2.class" afterPath="$PROJECT_DIR$/bin/javadesign/windows/MenuWindow$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/windows/MenuWindow.class" afterPath="$PROJECT_DIR$/bin/javadesign/windows/MenuWindow.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/specificmodel/OperateRecord.class" afterPath="$PROJECT_DIR$/bin/javadesign/specificmodel/OperateRecord.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/specificmodel/OperateRecordData.class" afterPath="$PROJECT_DIR$/bin/javadesign/specificmodel/OperateRecordData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/specificmodel/OperateWindow.class" afterPath="$PROJECT_DIR$/bin/javadesign/specificmodel/OperateWindow.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/specificmodel/OutgoingRecord.class" afterPath="$PROJECT_DIR$/bin/javadesign/specificmodel/OutgoingRecord.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/windows/OutgoingRecordAdmin.class" afterPath="$PROJECT_DIR$/bin/javadesign/windows/OutgoingRecordAdmin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/specificmodel/OutgoingRecordData.class" afterPath="$PROJECT_DIR$/bin/javadesign/specificmodel/OutgoingRecordData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/specificmodel/PicturePanel.class" afterPath="$PROJECT_DIR$/bin/javadesign/specificmodel/PicturePanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/util/StaticValue.class" afterPath="$PROJECT_DIR$/bin/javadesign/util/StaticValue.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/logic/Status.class" afterPath="$PROJECT_DIR$/bin/javadesign/logic/Status.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/util/Util.class" afterPath="$PROJECT_DIR$/bin/javadesign/util/Util.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/abstractmodel/Window$1.class" afterPath="$PROJECT_DIR$/bin/javadesign/abstractmodel/Window$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/javadesign/abstractmodel/Window.class" afterPath="$PROJECT_DIR$/bin/javadesign/abstractmodel/Window.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/javadesign/main/Main.java" afterPath="$PROJECT_DIR$/src/javadesign/main/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="0df715be-8301-4d26-84d7-9eb513741ad1" name="Default" comment="" />
     <ignored path="JavaDesign.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -64,256 +23,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MenuWindow.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MenuWindow.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/javadesign/windows/MenuWindow.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JAVA/javadesign" pinned="false" current-in-tab="true">
-        <entry file="uml://JAVA/javadesign">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>javadesign</OriginalElement>
-              <nodes>
-                <node x="403.24999999999994" y="475.0">javadesign.specificmodel.IncomingRecord</node>
-                <node x="0.0" y="475.0">javadesign.specificmodel.OutgoingRecordData</node>
-                <node x="91.25000000000001" y="395.0">javadesign.specificmodel.OperateRecordData</node>
-                <node x="208.0" y="315.0">javadesign.abstractmodel.Data</node>
-                <node x="176.0" y="475.0">javadesign.specificmodel.IncomingRecordData</node>
-                <node x="111.75" y="160.0">javadesign.specificmodel.OperateWindow</node>
-                <node x="260.25" y="395.0">javadesign.specificmodel.GoodsData</node>
-                <node x="332.0" y="550.0">javadesign.specificmodel.PicturePanel</node>
-                <node x="591.0" y="550.0">javadesign.main.Main</node>
-                <node x="410.1944444444444" y="80.0">javadesign.windows.MenuWindow</node>
-                <node x="258.75" y="160.0">javadesign.windows.GoodsDataAdmin</node>
-                <node x="326.1944444444444" y="80.0">javadesign.windows.Login</node>
-                <node x="480.5" y="395.0">javadesign.specificmodel.OperateRecord</node>
-                <node x="185.0" y="240.0">javadesign.windows.OutgoingRecordAdmin</node>
-                <node x="535.75" y="315.0">javadesign.abstractmodel.ItemFromJTable</node>
-                <node x="373.75" y="0.0">javadesign.abstractmodel.Window</node>
-                <node x="0.0" y="550.0">javadesign.specificmodel.IconListRenderer</node>
-                <node x="479.0" y="550.0">javadesign.logic.Status</node>
-                <node x="622.5" y="395.0">javadesign.specificmodel.Good</node>
-                <node x="542.1944444444445" y="80.0">javadesign.windows.AddWindow</node>
-                <node x="193.1944444444444" y="80.0">javadesign.specificmodel.GeneralFrame</node>
-                <node x="551.25" y="475.0">javadesign.specificmodel.OutgoingRecord</node>
-                <node x="0.0" y="240.0">javadesign.windows.IncomingRecordAdmin</node>
-                <node x="175.0" y="550.0">javadesign.abstractmodel.ItemFromJList</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="javadesign.specificmodel.IncomingRecord" target="javadesign.specificmodel.OperateRecord">
-                  <point x="5.6843418860808015E-14" y="-15.0" />
-                  <point x="467.25" y="450.0" />
-                  <point x="511.0" y="450.0" />
-                  <point x="-30.5" y="15.0" />
-                </edge>
-                <edge source="javadesign.specificmodel.IncomingRecordData" target="javadesign.specificmodel.IncomingRecord">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="javadesign.specificmodel.OperateRecordData" target="javadesign.abstractmodel.Data">
-                  <point x="0.0" y="-15.0" />
-                  <point x="165.75" y="370.0" />
-                  <point x="222.75" y="370.0" />
-                  <point x="-14.75" y="15.0" />
-                </edge>
-                <edge source="javadesign.windows.MenuWindow" target="javadesign.specificmodel.IconListRenderer">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="javadesign.windows.MenuWindow" target="javadesign.windows.OutgoingRecordAdmin">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="javadesign.main.Main" target="javadesign.windows.MenuWindow">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="javadesign.specificmodel.OutgoingRecordData" target="javadesign.specificmodel.OperateRecordData">
-                  <point x="0.0" y="-15.0" />
-                  <point x="78.0" y="450.0" />
-                  <point x="128.5" y="450.0" />
-                  <point x="-37.25" y="15.0" />
-                </edge>
-                <edge source="javadesign.specificmodel.GoodsData" target="javadesign.abstractmodel.Data">
-                  <point x="0.0" y="-15.0" />
-                  <point x="309.25" y="370.0" />
-                  <point x="252.25" y="370.0" />
-                  <point x="14.75" y="15.0" />
-                </edge>
-                <edge source="javadesign.specificmodel.OperateWindow" target="javadesign.windows.AddWindow">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="javadesign.windows.Login" target="javadesign.abstractmodel.Window">
-                  <point x="0.0" y="-15.0" />
-                  <point x="358.1944444444444" y="60.0" />
-                  <point x="403.375" y="60.0" />
-                  <point x="-9.875" y="15.0" />
-                </edge>
-                <edge source="javadesign.windows.MenuWindow" target="javadesign.abstractmodel.ItemFromJList">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="javadesign.specificmodel.OperateRecord" target="javadesign.abstractmodel.ItemFromJTable">
-                  <point x="0.0" y="-15.0" />
-                  <point x="541.5" y="370.0" />
-                  <point x="567.0" y="370.0" />
-                  <point x="-31.25" y="15.0" />
-                </edge>
-                <edge source="javadesign.windows.GoodsDataAdmin" target="javadesign.windows.AddWindow">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="javadesign.windows.MenuWindow" target="javadesign.windows.GoodsDataAdmin">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="javadesign.specificmodel.GeneralFrame" target="javadesign.abstractmodel.Window">
-                  <point x="2.8421709430404007E-14" y="-15.0" />
-                  <point x="249.69444444444443" y="50.0" />
-                  <point x="383.625" y="50.0" />
-                  <point x="-29.625" y="15.0" />
-                </edge>
-                <edge source="javadesign.specificmodel.OperateRecord" target="javadesign.specificmodel.Good">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="javadesign.windows.IncomingRecordAdmin" target="javadesign.specificmodel.IncomingRecord">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="javadesign.windows.IncomingRecordAdmin" target="javadesign.specificmodel.IncomingRecordData">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="javadesign.windows.OutgoingRecordAdmin" target="javadesign.specificmodel.OutgoingRecordData">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="javadesign.abstractmodel.Window" target="javadesign.logic.Status">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="javadesign.abstractmodel.Window" target="javadesign.specificmodel.GoodsData">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="javadesign.windows.AddWindow" target="javadesign.specificmodel.GeneralFrame">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="javadesign.specificmodel.Good" target="javadesign.abstractmodel.ItemFromJTable">
-                  <point x="0.0" y="-15.0" />
-                  <point x="655.0" y="370.0" />
-                  <point x="629.5" y="370.0" />
-                  <point x="31.25" y="15.0" />
-                </edge>
-                <edge source="javadesign.abstractmodel.Window" target="javadesign.specificmodel.PicturePanel">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="javadesign.logic.Status" target="javadesign.abstractmodel.Window">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="javadesign.windows.MenuWindow" target="javadesign.windows.IncomingRecordAdmin">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="javadesign.specificmodel.IncomingRecordData" target="javadesign.specificmodel.OperateRecordData">
-                  <point x="0.0" y="-15.0" />
-                  <point x="253.5" y="450.0" />
-                  <point x="203.0" y="450.0" />
-                  <point x="37.25" y="15.0" />
-                </edge>
-                <edge source="javadesign.specificmodel.OutgoingRecordData" target="javadesign.specificmodel.OutgoingRecord">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="javadesign.windows.OutgoingRecordAdmin" target="javadesign.specificmodel.OutgoingRecord">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="javadesign.specificmodel.OperateWindow" target="javadesign.specificmodel.GeneralFrame">
-                  <point x="0.0" y="-15.0" />
-                  <point x="175.25" y="135.0" />
-                  <point x="221.4444444444444" y="135.0" />
-                  <point x="-28.25" y="15.0" />
-                </edge>
-                <edge source="javadesign.windows.OutgoingRecordAdmin" target="javadesign.specificmodel.OperateWindow">
-                  <point x="0.0" y="-15.0" />
-                  <point x="268.0" y="215.0" />
-                  <point x="207.0" y="215.0" />
-                  <point x="31.75" y="15.0" />
-                </edge>
-                <edge source="javadesign.specificmodel.GoodsData" target="javadesign.specificmodel.Good">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="javadesign.abstractmodel.ItemFromJList" target="javadesign.specificmodel.IconListRenderer">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="javadesign.abstractmodel.Data" target="javadesign.abstractmodel.ItemFromJTable">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="javadesign.windows.MenuWindow" target="javadesign.windows.Login">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="javadesign.windows.AddWindow" target="javadesign.abstractmodel.Window">
-                  <point x="0.0" y="-15.0" />
-                  <point x="593.6944444444445" y="50.0" />
-                  <point x="442.875" y="50.0" />
-                  <point x="29.625" y="15.0" />
-                </edge>
-                <edge source="javadesign.windows.GoodsDataAdmin" target="javadesign.specificmodel.Good">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="javadesign.windows.GoodsDataAdmin" target="javadesign.specificmodel.GeneralFrame">
-                  <point x="0.0" y="-15.0" />
-                  <point x="326.25" y="135.0" />
-                  <point x="277.94444444444446" y="135.0" />
-                  <point x="28.25000000000003" y="15.0" />
-                </edge>
-                <edge source="javadesign.specificmodel.OutgoingRecord" target="javadesign.specificmodel.OperateRecord">
-                  <point x="0.0" y="-15.0" />
-                  <point x="615.75" y="450.0" />
-                  <point x="572.0" y="450.0" />
-                  <point x="30.5" y="15.0" />
-                </edge>
-                <edge source="javadesign.specificmodel.GeneralFrame" target="javadesign.abstractmodel.Data">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="javadesign.windows.MenuWindow" target="javadesign.abstractmodel.Window">
-                  <point x="0.0" y="-15.0" />
-                  <point x="466.1944444444444" y="60.0" />
-                  <point x="423.125" y="60.0" />
-                  <point x="9.875" y="15.0" />
-                </edge>
-                <edge source="javadesign.windows.IncomingRecordAdmin" target="javadesign.specificmodel.OperateWindow">
-                  <point x="0.0" y="-15.0" />
-                  <point x="82.5" y="215.0" />
-                  <point x="143.5" y="215.0" />
-                  <point x="-31.75" y="15.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="1.0" x="344.0" y="230.0" />
-              <SelectedNodes />
-              <Categories />
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
@@ -379,7 +94,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
+    <option name="width" value="1932" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -421,8 +136,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -590,6 +303,8 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -908,14 +623,15 @@
       <workItem from="1428718651833" duration="12000" />
       <workItem from="1428751014036" duration="940000" />
       <workItem from="1428763105083" duration="1134000" />
+      <workItem from="1428829115269" duration="7000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7049000" />
+    <option name="totallyTimeSpent" value="7056000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -927,7 +643,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293919" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1652452" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1650641" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973945" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24978392" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24977538" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -996,6 +712,33 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/javadesign/windows/MenuWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javadesign/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javadesign/windows/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="91" column="35" selection-start-line="91" selection-start-column="35" selection-end-line="91" selection-end-column="35" />
+          <folding>
+            <element signature="e#2559#2798#0" expanded="true" />
+            <element signature="e#2797#2798#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/javadesign/windows/MenuWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">

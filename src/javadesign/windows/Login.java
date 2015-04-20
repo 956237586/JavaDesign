@@ -8,6 +8,8 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 import javadesign.abstractmodel.Window;
+import javadesign.specificmodel.UserData;
+import javadesign.util.Util;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -23,7 +25,7 @@ public class Login extends Window {
 	private static final long serialVersionUID = 1L;
 	private JTextField textField_uname;
 	private JPasswordField pwdField_pwd;
-
+	private UserData userData;
 	public Login() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// 主窗口默认退出操作为关闭
 		status.getWindows().put("LoginWindow", this);
@@ -32,7 +34,8 @@ public class Login extends Window {
 		getContentPane().setLayout(null);
 
 		// 读取用户数据，加载主登录窗口，如果登录成功继续加载主操作窗口
-
+		userData = new UserData();
+		userData.loadData();
 		// 提示标签
 		JLabel label_username = new JLabel("用户名：");
 		label_username.setFont(new Font("SimSun", Font.PLAIN, 12));
@@ -121,10 +124,15 @@ public class Login extends Window {
 					JOptionPane.WARNING_MESSAGE);
 			textField_uname.requestFocus();
 		} else {
-			status.setLogin(true);
-			status.setLoginUsername(textField_uname.getText());
-			((MenuWindow) status.getWindow("MenuWindow")).LoginSucceed();
-			setVisible(false);
+			if(userData.canAccess(username,password)) {
+				status.setLogin(true);
+				status.setLoginUsername(textField_uname.getText());
+				((MenuWindow) status.getWindow("MenuWindow")).LoginSucceed();
+				setVisible(false);
+			}else{
+				Util.alertError("请确认您的密码正确并重试，如果依然不能登陆请联系系统管理员");
+				textField_uname.requestFocus();
+			}
 		}
 	}
 }
