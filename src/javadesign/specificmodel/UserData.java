@@ -3,7 +3,7 @@ package javadesign.specificmodel;
 import java.util.Vector;
 
 import javadesign.abstractmodel.Data;
-import javadesign.abstractmodel.ItemFromJTable;
+import javadesign.abstractmodel.ItemFromData;
 import javadesign.util.Util;
 
 public class UserData extends Data {
@@ -12,7 +12,7 @@ public class UserData extends Data {
 	@Override
 	public void loadData() {
 		// 测试数据
-		contents = new Vector<ItemFromJTable>();
+		contents = new Vector<ItemFromData>();
 		String username = "admin";
 		contents.add(new User(username, username));
 	}
@@ -22,7 +22,7 @@ public class UserData extends Data {
 	}
 
 	public boolean canAccess(String username, String password) {
-		for (ItemFromJTable item : contents) {
+		for (ItemFromData item : contents) {
 			if (item.get(0).equals(username)
 					&& item.get(1).equals(Util.encode(password))) {
 				return true;

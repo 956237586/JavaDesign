@@ -1,8 +1,8 @@
 package javadesign.specificmodel;
 
-import javadesign.abstractmodel.ItemFromJTable;
+import javadesign.abstractmodel.ItemFromData;
 
-public class Good extends ItemFromJTable {
+public class Good extends ItemFromData {
 	private static final long serialVersionUID = 1L;
 	private int id; // ID 0
 	private String name; // 名称 1

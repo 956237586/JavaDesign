@@ -1,9 +1,9 @@
 package javadesign.specificmodel;
 
-import javadesign.abstractmodel.ItemFromJTable;
+import javadesign.abstractmodel.ItemFromData;
 import javadesign.util.Util;
 
-public class User extends ItemFromJTable {
+public class User extends ItemFromData {
 	private static final long serialVersionUID = 1L;
 	private String username;
 	private String passwordMD5;
