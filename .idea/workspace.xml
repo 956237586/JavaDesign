@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0df715be-8301-4d26-84d7-9eb513741ad1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/javadesign/abstractmodel/Data.java" afterPath="$PROJECT_DIR$/src/javadesign/abstractmodel/Data.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/javadesign/specificmodel/Good.java" afterPath="$PROJECT_DIR$/src/javadesign/specificmodel/Good.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/javadesign/specificmodel/GoodsData.java" afterPath="$PROJECT_DIR$/src/javadesign/specificmodel/GoodsData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/javadesign/specificmodel/OperateRecord.java" afterPath="$PROJECT_DIR$/src/javadesign/specificmodel/OperateRecord.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/javadesign/specificmodel/User.java" afterPath="$PROJECT_DIR$/src/javadesign/specificmodel/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/javadesign/specificmodel/UserData.java" afterPath="$PROJECT_DIR$/src/javadesign/specificmodel/UserData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/icon1.png" afterPath="$PROJECT_DIR$/res/icon1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/icon2.png" afterPath="$PROJECT_DIR$/res/icon2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/icon3.png" afterPath="$PROJECT_DIR$/res/icon3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/javadesign/windows/MenuWindow.java" afterPath="$PROJECT_DIR$/src/javadesign/windows/MenuWindow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/javadesign/abstractmodel/Window.java" afterPath="$PROJECT_DIR$/src/javadesign/abstractmodel/Window.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="F:\My Documents\workspace\JavaDesign\src\javadesign\abstractmodel\ItemFromJTable.java" afterPath="$PROJECT_DIR$/src/javadesign/abstractmodel/ItemFromData.java" />
     </list>
     <ignored path="JavaDesign.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,151 +30,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JAVA/javadesign.abstractmodel.Data" pinned="false" current-in-tab="true">
-        <entry file="uml://JAVA/javadesign.abstractmodel.Data">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>javadesign.abstractmodel.Data</OriginalElement>
-              <nodes>
-                <node x="0.0" y="710.0">javadesign.specificmodel.IncomingRecord</node>
-                <node x="380.875" y="395.0">javadesign.specificmodel.UserData</node>
-                <node x="0.0" y="475.0">javadesign.specificmodel.OutgoingRecordData</node>
-                <node x="112.25" y="160.0">javadesign.specificmodel.OperateWindow</node>
-                <node x="259.25" y="160.0">javadesign.windows.GoodsDataAdmin</node>
-                <node x="329.3611111111111" y="80.0">javadesign.windows.MenuWindow</node>
-                <node x="306.875" y="630.0">javadesign.specificmodel.User</node>
-                <node x="0.0" y="240.0">javadesign.windows.OutgoingRecordAdmin</node>
-                <node x="545.3611111111111" y="80.0">javadesign.windows.AddWindow</node>
-                <node x="93.875" y="395.0">javadesign.specificmodel.OperateRecordData</node>
-                <node x="279.75" y="315.0">javadesign.abstractmodel.Data</node>
-                <node x="176.0" y="475.0">javadesign.specificmodel.IncomingRecordData</node>
-                <node x="262.875" y="395.0">javadesign.specificmodel.GoodsData</node>
-                <node x="461.3611111111111" y="80.0">javadesign.windows.Login</node>
-                <node x="79.87500000000003" y="630.0">javadesign.specificmodel.OperateRecord</node>
-                <node x="398.25" y="0.0">javadesign.abstractmodel.Window</node>
-                <node x="221.87500000000003" y="630.0">javadesign.specificmodel.Good</node>
-                <node x="196.3611111111111" y="80.0">javadesign.specificmodel.GeneralFrame</node>
-                <node x="148.0" y="710.0">javadesign.specificmodel.OutgoingRecord</node>
-                <node x="194.25" y="550.0">javadesign.abstractmodel.ItemFromData</node>
-                <node x="186.0" y="240.0">javadesign.windows.IncomingRecordAdmin</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="javadesign.specificmodel.IncomingRecord" target="javadesign.specificmodel.OperateRecord">
-                  <point x="0.0" y="-15.0" />
-                  <point x="64.0" y="685.0" />
-                  <point x="110.37500000000003" y="685.0" />
-                  <point x="-30.5" y="15.0" />
-                </edge>
-                <edge source="javadesign.specificmodel.OperateRecordData" target="javadesign.abstractmodel.Data">
-                  <point x="0.0" y="-15.0" />
-                  <point x="168.375" y="370.0" />
-                  <point x="289.5833333333333" y="370.0" />
-                  <point x="-19.666666666666686" y="15.0" />
-                </edge>
-                <edge source="javadesign.specificmodel.OutgoingRecordData" target="javadesign.specificmodel.OperateRecordData">
-                  <point x="0.0" y="-15.0" />
-                  <point x="78.0" y="450.0" />
-                  <point x="131.125" y="450.0" />
-                  <point x="-37.25" y="15.0" />
-                </edge>
-                <edge source="javadesign.specificmodel.GoodsData" target="javadesign.abstractmodel.Data">
-                  <point x="0.0" y="-15.0" />
-                  <point x="311.875" y="370.0" />
-                  <point x="309.25" y="370.0" />
-                  <point x="0.0" y="15.0" />
-                </edge>
-                <edge source="javadesign.windows.Login" target="javadesign.abstractmodel.Window">
-                  <point x="0.0" y="-15.0" />
-                  <point x="493.3611111111111" y="60.0" />
-                  <point x="447.625" y="60.0" />
-                  <point x="9.875" y="15.0" />
-                </edge>
-                <edge source="javadesign.specificmodel.GeneralFrame" target="javadesign.abstractmodel.Window">
-                  <point x="0.0" y="-15.0" />
-                  <point x="252.8611111111111" y="50.0" />
-                  <point x="408.125" y="50.0" />
-                  <point x="-29.625" y="15.0" />
-                </edge>
-                <edge source="javadesign.specificmodel.OperateRecord" target="javadesign.abstractmodel.ItemFromData">
-                  <point x="0.0" y="-15.0" />
-                  <point x="140.87500000000003" y="605.0" />
-                  <point x="213.41666666666663" y="605.0" />
-                  <point x="-38.33333333333334" y="15.0" />
-                </edge>
-                <edge source="javadesign.specificmodel.IncomingRecordData" target="javadesign.specificmodel.OperateRecordData">
-                  <point x="0.0" y="-15.0" />
-                  <point x="253.5" y="450.0" />
-                  <point x="205.625" y="450.0" />
-                  <point x="37.25" y="15.0" />
-                </edge>
-                <edge source="javadesign.specificmodel.UserData" target="javadesign.abstractmodel.Data">
-                  <point x="0.0" y="-15.0" />
-                  <point x="423.875" y="370.0" />
-                  <point x="328.9166666666667" y="370.0" />
-                  <point x="19.666666666666686" y="15.0" />
-                </edge>
-                <edge source="javadesign.specificmodel.OperateWindow" target="javadesign.specificmodel.GeneralFrame">
-                  <point x="0.0" y="-15.0" />
-                  <point x="175.75" y="135.0" />
-                  <point x="224.6111111111111" y="135.0" />
-                  <point x="-28.25" y="15.0" />
-                </edge>
-                <edge source="javadesign.windows.OutgoingRecordAdmin" target="javadesign.specificmodel.OperateWindow">
-                  <point x="0.0" y="-15.0" />
-                  <point x="83.0" y="215.0" />
-                  <point x="144.0" y="215.0" />
-                  <point x="-31.75" y="15.0" />
-                </edge>
-                <edge source="javadesign.specificmodel.Good" target="javadesign.abstractmodel.ItemFromData">
-                  <point x="-2.8421709430404007E-14" y="-15.0" />
-                  <point x="254.375" y="605.0" />
-                  <point x="251.75" y="605.0" />
-                  <point x="0.0" y="15.0" />
-                </edge>
-                <edge source="javadesign.windows.AddWindow" target="javadesign.abstractmodel.Window">
-                  <point x="0.0" y="-15.0" />
-                  <point x="596.8611111111111" y="50.0" />
-                  <point x="467.375" y="50.0" />
-                  <point x="29.625" y="15.0" />
-                </edge>
-                <edge source="javadesign.specificmodel.User" target="javadesign.abstractmodel.ItemFromData">
-                  <point x="0.0" y="-15.0" />
-                  <point x="336.375" y="605.0" />
-                  <point x="290.08333333333337" y="605.0" />
-                  <point x="38.33333333333337" y="15.0" />
-                </edge>
-                <edge source="javadesign.specificmodel.OutgoingRecord" target="javadesign.specificmodel.OperateRecord">
-                  <point x="0.0" y="-15.0" />
-                  <point x="212.5" y="685.0" />
-                  <point x="171.37500000000003" y="685.0" />
-                  <point x="30.5" y="15.0" />
-                </edge>
-                <edge source="javadesign.windows.GoodsDataAdmin" target="javadesign.specificmodel.GeneralFrame">
-                  <point x="0.0" y="-15.0" />
-                  <point x="326.75" y="135.0" />
-                  <point x="281.1111111111111" y="135.0" />
-                  <point x="28.25" y="15.0" />
-                </edge>
-                <edge source="javadesign.windows.MenuWindow" target="javadesign.abstractmodel.Window">
-                  <point x="0.0" y="-15.0" />
-                  <point x="385.3611111111111" y="60.0" />
-                  <point x="427.875" y="60.0" />
-                  <point x="-9.875" y="15.0" />
-                </edge>
-                <edge source="javadesign.windows.IncomingRecordAdmin" target="javadesign.specificmodel.OperateWindow">
-                  <point x="0.0" y="-15.0" />
-                  <point x="268.5" y="215.0" />
-                  <point x="207.5" y="215.0" />
-                  <point x="31.75" y="15.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="1.0" x="324.5" y="226.0" />
-              <SelectedNodes />
-              <Categories />
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
+      <file leaf-file-name="Window.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/javadesign/abstractmodel/Window.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuWindow.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/javadesign/windows/MenuWindow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.21582733">
+              <caret line="99" column="19" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -198,6 +67,7 @@
         <option value="$PROJECT_DIR$/src/javadesign/specificmodel/IncomingRecordData.java" />
         <option value="$PROJECT_DIR$/src/javadesign/abstractmodel/Data.java" />
         <option value="$PROJECT_DIR$/src/javadesign/windows/Login.java" />
+        <option value="$PROJECT_DIR$/src/javadesign/abstractmodel/Window.java" />
         <option value="$PROJECT_DIR$/src/javadesign/windows/MenuWindow.java" />
       </list>
     </option>
@@ -751,12 +621,19 @@
       <workItem from="1428829115269" duration="7000" />
       <workItem from="1429587147404" duration="963000" />
       <workItem from="1429781127822" duration="14000" />
-      <workItem from="1430039081839" duration="148000" />
+      <workItem from="1430039081839" duration="2302000" />
     </task>
+    <task id="LOCAL-00001" summary="change class name">
+      <created>1430039255082</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1430039255082</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8181000" />
+    <option name="totallyTimeSpent" value="10335000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="24" width="1932" height="1032" extended-state="0" />
@@ -764,11 +641,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293919" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39281943" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973945" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32951945" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3298969" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24513173" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293919" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1650641" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -777,16 +656,14 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24977538" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6976351" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973945" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15989628" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6976351" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24526198" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -830,6 +707,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="change class name" />
+    <option name="LAST_COMMIT_MESSAGE" value="change class name" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1603,14 +1484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/javadesign/windows/MenuWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://JAVA/javadesign">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -2175,144 +2048,67 @@
           <ID>JAVA</ID>
           <OriginalElement>javadesign.abstractmodel.Data</OriginalElement>
           <nodes>
-            <node x="0.0" y="710.0">javadesign.specificmodel.IncomingRecord</node>
-            <node x="380.875" y="395.0">javadesign.specificmodel.UserData</node>
-            <node x="0.0" y="475.0">javadesign.specificmodel.OutgoingRecordData</node>
-            <node x="112.25" y="160.0">javadesign.specificmodel.OperateWindow</node>
-            <node x="259.25" y="160.0">javadesign.windows.GoodsDataAdmin</node>
-            <node x="329.3611111111111" y="80.0">javadesign.windows.MenuWindow</node>
-            <node x="306.875" y="630.0">javadesign.specificmodel.User</node>
-            <node x="0.0" y="240.0">javadesign.windows.OutgoingRecordAdmin</node>
-            <node x="545.3611111111111" y="80.0">javadesign.windows.AddWindow</node>
-            <node x="93.875" y="395.0">javadesign.specificmodel.OperateRecordData</node>
-            <node x="279.75" y="315.0">javadesign.abstractmodel.Data</node>
-            <node x="176.0" y="475.0">javadesign.specificmodel.IncomingRecordData</node>
-            <node x="262.875" y="395.0">javadesign.specificmodel.GoodsData</node>
-            <node x="461.3611111111111" y="80.0">javadesign.windows.Login</node>
-            <node x="79.87500000000003" y="630.0">javadesign.specificmodel.OperateRecord</node>
-            <node x="398.25" y="0.0">javadesign.abstractmodel.Window</node>
-            <node x="221.87500000000003" y="630.0">javadesign.specificmodel.Good</node>
-            <node x="196.3611111111111" y="80.0">javadesign.specificmodel.GeneralFrame</node>
-            <node x="148.0" y="710.0">javadesign.specificmodel.OutgoingRecord</node>
-            <node x="194.25" y="550.0">javadesign.abstractmodel.ItemFromData</node>
-            <node x="186.0" y="240.0">javadesign.windows.IncomingRecordAdmin</node>
+            <node x="" y="">javadesign.specificmodel.IncomingRecord</node>
+            <node x="" y="">javadesign.specificmodel.UserData</node>
+            <node x="" y="">javadesign.specificmodel.OutgoingRecordData</node>
+            <node x="" y="">javadesign.specificmodel.OperateWindow</node>
+            <node x="" y="">javadesign.windows.GoodsDataAdmin</node>
+            <node x="" y="">javadesign.windows.MenuWindow</node>
+            <node x="" y="">javadesign.specificmodel.User</node>
+            <node x="" y="">javadesign.windows.OutgoingRecordAdmin</node>
+            <node x="" y="">javadesign.windows.AddWindow</node>
+            <node x="" y="">javadesign.specificmodel.OperateRecordData</node>
+            <node x="" y="">javadesign.abstractmodel.Data</node>
+            <node x="" y="">javadesign.specificmodel.IncomingRecordData</node>
+            <node x="" y="">javadesign.specificmodel.GoodsData</node>
+            <node x="" y="">javadesign.windows.Login</node>
+            <node x="" y="">javadesign.specificmodel.OperateRecord</node>
+            <node x="" y="">javadesign.abstractmodel.Window</node>
+            <node x="" y="">javadesign.specificmodel.Good</node>
+            <node x="" y="">javadesign.specificmodel.GeneralFrame</node>
+            <node x="" y="">javadesign.specificmodel.OutgoingRecord</node>
+            <node x="" y="">javadesign.abstractmodel.ItemFromData</node>
+            <node x="" y="">javadesign.windows.IncomingRecordAdmin</node>
           </nodes>
           <notes />
-          <edges>
-            <edge source="javadesign.specificmodel.IncomingRecord" target="javadesign.specificmodel.OperateRecord">
-              <point x="0.0" y="-15.0" />
-              <point x="64.0" y="685.0" />
-              <point x="110.37500000000003" y="685.0" />
-              <point x="-30.5" y="15.0" />
-            </edge>
-            <edge source="javadesign.specificmodel.OperateRecordData" target="javadesign.abstractmodel.Data">
-              <point x="0.0" y="-15.0" />
-              <point x="168.375" y="370.0" />
-              <point x="289.5833333333333" y="370.0" />
-              <point x="-19.666666666666686" y="15.0" />
-            </edge>
-            <edge source="javadesign.specificmodel.OutgoingRecordData" target="javadesign.specificmodel.OperateRecordData">
-              <point x="0.0" y="-15.0" />
-              <point x="78.0" y="450.0" />
-              <point x="131.125" y="450.0" />
-              <point x="-37.25" y="15.0" />
-            </edge>
-            <edge source="javadesign.specificmodel.GoodsData" target="javadesign.abstractmodel.Data">
-              <point x="0.0" y="-15.0" />
-              <point x="311.875" y="370.0" />
-              <point x="309.25" y="370.0" />
-              <point x="0.0" y="15.0" />
-            </edge>
-            <edge source="javadesign.windows.Login" target="javadesign.abstractmodel.Window">
-              <point x="0.0" y="-15.0" />
-              <point x="493.3611111111111" y="60.0" />
-              <point x="447.625" y="60.0" />
-              <point x="9.875" y="15.0" />
-            </edge>
-            <edge source="javadesign.specificmodel.GeneralFrame" target="javadesign.abstractmodel.Window">
-              <point x="0.0" y="-15.0" />
-              <point x="252.8611111111111" y="50.0" />
-              <point x="408.125" y="50.0" />
-              <point x="-29.625" y="15.0" />
-            </edge>
-            <edge source="javadesign.specificmodel.OperateRecord" target="javadesign.abstractmodel.ItemFromData">
-              <point x="0.0" y="-15.0" />
-              <point x="140.87500000000003" y="605.0" />
-              <point x="213.41666666666663" y="605.0" />
-              <point x="-38.33333333333334" y="15.0" />
-            </edge>
-            <edge source="javadesign.specificmodel.IncomingRecordData" target="javadesign.specificmodel.OperateRecordData">
-              <point x="0.0" y="-15.0" />
-              <point x="253.5" y="450.0" />
-              <point x="205.625" y="450.0" />
-              <point x="37.25" y="15.0" />
-            </edge>
-            <edge source="javadesign.specificmodel.UserData" target="javadesign.abstractmodel.Data">
-              <point x="0.0" y="-15.0" />
-              <point x="423.875" y="370.0" />
-              <point x="328.9166666666667" y="370.0" />
-              <point x="19.666666666666686" y="15.0" />
-            </edge>
-            <edge source="javadesign.specificmodel.OperateWindow" target="javadesign.specificmodel.GeneralFrame">
-              <point x="0.0" y="-15.0" />
-              <point x="175.75" y="135.0" />
-              <point x="224.6111111111111" y="135.0" />
-              <point x="-28.25" y="15.0" />
-            </edge>
-            <edge source="javadesign.windows.OutgoingRecordAdmin" target="javadesign.specificmodel.OperateWindow">
-              <point x="0.0" y="-15.0" />
-              <point x="83.0" y="215.0" />
-              <point x="144.0" y="215.0" />
-              <point x="-31.75" y="15.0" />
-            </edge>
-            <edge source="javadesign.specificmodel.Good" target="javadesign.abstractmodel.ItemFromData">
-              <point x="-2.8421709430404007E-14" y="-15.0" />
-              <point x="254.375" y="605.0" />
-              <point x="251.75" y="605.0" />
-              <point x="0.0" y="15.0" />
-            </edge>
-            <edge source="javadesign.windows.AddWindow" target="javadesign.abstractmodel.Window">
-              <point x="0.0" y="-15.0" />
-              <point x="596.8611111111111" y="50.0" />
-              <point x="467.375" y="50.0" />
-              <point x="29.625" y="15.0" />
-            </edge>
-            <edge source="javadesign.specificmodel.User" target="javadesign.abstractmodel.ItemFromData">
-              <point x="0.0" y="-15.0" />
-              <point x="336.375" y="605.0" />
-              <point x="290.08333333333337" y="605.0" />
-              <point x="38.33333333333337" y="15.0" />
-            </edge>
-            <edge source="javadesign.specificmodel.OutgoingRecord" target="javadesign.specificmodel.OperateRecord">
-              <point x="0.0" y="-15.0" />
-              <point x="212.5" y="685.0" />
-              <point x="171.37500000000003" y="685.0" />
-              <point x="30.5" y="15.0" />
-            </edge>
-            <edge source="javadesign.windows.GoodsDataAdmin" target="javadesign.specificmodel.GeneralFrame">
-              <point x="0.0" y="-15.0" />
-              <point x="326.75" y="135.0" />
-              <point x="281.1111111111111" y="135.0" />
-              <point x="28.25" y="15.0" />
-            </edge>
-            <edge source="javadesign.windows.MenuWindow" target="javadesign.abstractmodel.Window">
-              <point x="0.0" y="-15.0" />
-              <point x="385.3611111111111" y="60.0" />
-              <point x="427.875" y="60.0" />
-              <point x="-9.875" y="15.0" />
-            </edge>
-            <edge source="javadesign.windows.IncomingRecordAdmin" target="javadesign.specificmodel.OperateWindow">
-              <point x="0.0" y="-15.0" />
-              <point x="268.5" y="215.0" />
-              <point x="207.5" y="215.0" />
-              <point x="31.75" y="15.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="324.5" y="226.0" />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="324.5" y="530.5" />
           <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javadesign/windows/OutgoingRecordAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.45714286">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javadesign/abstractmodel/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javadesign/specificmodel/PicturePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25714287">
+          <caret line="45" column="62" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/javadesign/windows/MenuWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21582733">
+          <caret line="99" column="19" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>

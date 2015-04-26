@@ -2,9 +2,12 @@ package javadesign.abstractmodel;
 
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
+import java.io.FileInputStream;
+import java.io.IOException;
 
 import javadesign.logic.Status;
 
+import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 
 import javadesign.specificmodel.GoodsData;
@@ -21,6 +24,11 @@ public class Window extends JFrame {
 		setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);// 所有窗口默认退出操作为隐藏
 		setSize(StaticValue.DEFAULT_WIDTH, StaticValue.DEFAULT_HEIGHT);
 		getContentPane().setLayout(null);
+		try {
+			setIconImage(ImageIO.read(new FileInputStream("res/main.png")));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public Window(String imgPath) {

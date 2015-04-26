@@ -111,7 +111,7 @@ public class MenuWindow extends Window {
 		ItemFromJList item1 = new ItemFromJList("res/icon1.png", "货物资料管理");
 		ItemFromJList item2 = new ItemFromJList("res/icon2.png", "货物入库管理");
 		ItemFromJList item3 = new ItemFromJList("res/icon3.png", "货物出库管理");
-		ItemFromJList item4 = new ItemFromJList("res/icon3.png", "退出管理系统");
+		ItemFromJList item4 = new ItemFromJList("res/icon4.png", "退出管理系统");
 
 		listModel.addElement(item1);
 		listModel.addElement(item2);
