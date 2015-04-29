@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="JavaDesign:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaDesign_jar</output-path>
+    <root id="archive" name="JavaDesign.jar">
+      <element id="module-output" name="JavaDesign" />
+    </root>
+  </artifact>
+</component>

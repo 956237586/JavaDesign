@@ -2,8 +2,6 @@ package javadesign.windows;
 
 import java.util.Date;
 
-import com.sun.xml.internal.ws.spi.db.OldBridge;
-
 import javadesign.specificmodel.Good;
 import javadesign.specificmodel.OperateWindow;
 import javadesign.specificmodel.OutgoingRecord;
