@@ -1,9 +1,9 @@
 package javadesign.specificmodel;
 
-import javadesign.abstractmodel.ItemFromData;
+import javadesign.abstractmodel.DataItem;
 import javadesign.abstractmodel.Window;
 
-public class OperateRecord extends ItemFromData {
+public class OperateRecord extends DataItem {
 
 	private static final long serialVersionUID = 1L;
 	private String operateNo;

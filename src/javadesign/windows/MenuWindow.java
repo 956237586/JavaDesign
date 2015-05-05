@@ -1,11 +1,14 @@
 package javadesign.windows;
 
-import javadesign.abstractmodel.ItemFromJList;
+import java.awt.Font;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionAdapter;
+
+import javadesign.abstractmodel.MenuItem;
 import javadesign.abstractmodel.Window;
 import javadesign.specificmodel.IconListRenderer;
 import javadesign.util.StaticValue;
-
-import java.awt.Font;
 
 import javax.swing.DefaultListModel;
 import javax.swing.JFrame;
@@ -13,18 +16,13 @@ import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.ListSelectionModel;
 
-import java.awt.event.MouseMotionAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseAdapter;
-
 public class MenuWindow extends Window {
 	private static final long serialVersionUID = 1L;
 	private static final Font DEFAULT_LIST_FONT = StaticValue.DEFAULT_FONT;
 	private JLabel welcome;
-	private JList<ItemFromJList> list;
+	private JList<MenuItem> list;
 	private int currentindex;
-	private ItemFromJList currentItem;
-
+	private MenuItem currentItem;
 
 	public MenuWindow() {
 		super("res/bg.png");
@@ -33,7 +31,6 @@ public class MenuWindow extends Window {
 
 		setTitle("货物管理系统");
 		setResizable(true);
-		
 
 		// 加载用户界面，添加监听器加载不同界面模块
 		// 不同模块分别读取库存记录、入库单记录、出库单记录数据
@@ -43,7 +40,7 @@ public class MenuWindow extends Window {
 		welcome.setBounds(10, 10, 853, 44);
 		getContentPane().add(welcome);
 
-		list = new JList<ItemFromJList>();
+		list = new JList<MenuItem>();
 		list.addMouseMotionListener(new MouseMotionAdapter() {
 			// 增加条目放大的动画效果
 			@Override
@@ -84,7 +81,7 @@ public class MenuWindow extends Window {
 						new OutgoingRecordAdmin();
 					break;
 				case 3:// 退出系统
-						System.exit(0);
+					System.exit(0);
 					break;
 				default:
 					break;
@@ -101,14 +98,14 @@ public class MenuWindow extends Window {
 		list.setFont(DEFAULT_LIST_FONT);
 		list.setCellRenderer(new IconListRenderer());
 		list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-		DefaultListModel<ItemFromJList> listModel = new DefaultListModel<ItemFromJList>();
+		DefaultListModel<MenuItem> listModel = new DefaultListModel<MenuItem>();
 		list.setModel(listModel);
 		list.setOpaque(false); // 透明显示
 
-		ItemFromJList item1 = new ItemFromJList("res/icon1.png", "货物资料管理");
-		ItemFromJList item2 = new ItemFromJList("res/icon2.png", "货物入库管理");
-		ItemFromJList item3 = new ItemFromJList("res/icon3.png", "货物出库管理");
-		ItemFromJList item4 = new ItemFromJList("res/icon4.png", "退出管理系统");
+		MenuItem item1 = new MenuItem("res/icon1.png", "货物资料管理");
+		MenuItem item2 = new MenuItem("res/icon2.png", "货物入库管理");
+		MenuItem item3 = new MenuItem("res/icon3.png", "货物出库管理");
+		MenuItem item4 = new MenuItem("res/icon4.png", "退出管理系统");
 
 		listModel.addElement(item1);
 		listModel.addElement(item2);
@@ -135,10 +132,8 @@ public class MenuWindow extends Window {
 	}
 
 	public void LoginSucceed() {
-		welcome.setText("●▽●登陆成功，" + status.getLoginUsername()
+		welcome.setText("  ●▽●登录成功，" + status.getLoginUsername()
 				+ ",欢迎您的使用\\(^o^)/" + "请点击您要使用的功能");
 		setup();// 显示窗口
-		// this.repaint();
-		// Util.displayAtCenter(this);
 	}
 }

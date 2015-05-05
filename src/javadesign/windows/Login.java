@@ -1,6 +1,5 @@
 package javadesign.windows;
 
-import java.awt.Component;
 import java.awt.Font;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
@@ -19,8 +18,6 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
-import org.eclipse.wb.swing.FocusTraversalOnArray;
-
 public class Login extends Window {
 	private static final long serialVersionUID = 1L;
 	private JTextField textField_uname;
@@ -29,7 +26,7 @@ public class Login extends Window {
 	public Login() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// 主窗口默认退出操作为关闭
 		status.getWindows().put("LoginWindow", this);
-		setTitle("登陆");
+		setTitle("登录");
 		setResizable(false);
 		getContentPane().setLayout(null);
 
@@ -80,7 +77,7 @@ public class Login extends Window {
 		getContentPane().add(pwdField_pwd);
 
 		// 登陆按钮
-		JButton btn_login = new JButton("登陆");
+		JButton btn_login = new JButton("登录");
 		btn_login.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
@@ -103,10 +100,6 @@ public class Login extends Window {
 		});
 		btn_reset.setBounds(224, 163, 83, 33);
 		getContentPane().add(btn_reset);
-
-		// 设置tab键焦点先后顺序
-		setFocusTraversalPolicy(new FocusTraversalOnArray(new Component[] {
-				textField_uname, pwdField_pwd, btn_login, btn_reset }));
 
 		// 设置特殊的大小，覆盖父类的默认大小
 		setSize(427, 293);

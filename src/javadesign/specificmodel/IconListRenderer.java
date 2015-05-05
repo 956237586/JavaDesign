@@ -2,7 +2,7 @@ package javadesign.specificmodel;
 
 import java.awt.Component;
 
-import javadesign.abstractmodel.ItemFromJList;
+import javadesign.abstractmodel.MenuItem;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -20,7 +20,7 @@ public class IconListRenderer extends JButton implements
 	@Override
 	public Component getListCellRendererComponent(JList<?> list, Object value,
 			int index, boolean isSelected, boolean cellHasFocus) {
-		ItemFromJList item = (ItemFromJList) value;
+		MenuItem item = (MenuItem) value;
 		float size = list.getFont().getSize();
 
 		// 加入宽度为5的空白边框

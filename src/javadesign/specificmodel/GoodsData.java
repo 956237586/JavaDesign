@@ -3,7 +3,7 @@ package javadesign.specificmodel;
 import java.io.File;
 
 import javadesign.abstractmodel.Data;
-import javadesign.abstractmodel.ItemFromData;
+import javadesign.abstractmodel.DataItem;
 import javadesign.util.StaticValue;
 
 public class GoodsData extends Data {
@@ -44,8 +44,8 @@ public class GoodsData extends Data {
 	}
 
 	@Override
-	public ItemFromData getItemByKey(int key) {
-		for (ItemFromData item : contents) {
+	public DataItem getItemByKey(int key) {
+		for (DataItem item : contents) {
 			if (Integer.parseInt("" + item.get(0)) == key) {
 				return item;
 			}

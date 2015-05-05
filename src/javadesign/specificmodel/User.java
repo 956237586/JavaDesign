@@ -1,9 +1,9 @@
 package javadesign.specificmodel;
 
-import javadesign.abstractmodel.ItemFromData;
+import javadesign.abstractmodel.DataItem;
 import javadesign.util.Util;
 
-public class User extends ItemFromData {
+public class User extends DataItem {
 	private static final long serialVersionUID = 1L;
 	private String username;
 	private String passwordMD5;

@@ -3,7 +3,7 @@ package javadesign.abstractmodel;
 import java.util.Vector;
 
 
-public class ItemFromData extends Vector<Object>{
+public class DataItem extends Vector<Object>{
 	private static final long serialVersionUID = 1L;
 	protected String note; // 备注 
 

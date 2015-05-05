@@ -13,7 +13,7 @@ import javax.swing.table.DefaultTableModel;
 
 public class Data extends DefaultTableModel {
 	private static final long serialVersionUID = 1L;
-	protected Vector<ItemFromData> contents;
+	protected Vector<DataItem> contents;
 	protected Vector<String> columnNames = new Vector<String>();
 	protected File dataFile;
 
@@ -27,18 +27,18 @@ public class Data extends DefaultTableModel {
 		loadData();
 	}
 
-	public void addItem(ItemFromData item) {
+	public void addItem(DataItem item) {
 		if (item != null)
 			contents.add(item);
 		System.out.println("添加成功！");
 		saveData();
 	}
 
-	public void setContents(Vector<ItemFromData> contents) {
+	public void setContents(Vector<DataItem> contents) {
 		this.contents = contents;
 	}
 
-	public Vector<ItemFromData> getContents() {
+	public Vector<DataItem> getContents() {
 		return contents;
 	}
 
@@ -50,7 +50,7 @@ public class Data extends DefaultTableModel {
 		return columnNames;
 	}
 
-	public ItemFromData getItemByKey(int key) {
+	public DataItem getItemByKey(int key) {
 		return null;
 	}
 
@@ -60,7 +60,7 @@ public class Data extends DefaultTableModel {
 		try {
 			FileInputStream fileInput = new FileInputStream(dataFile);
 			ObjectInputStream dataInput = new ObjectInputStream(fileInput);
-			contents = (Vector<ItemFromData>) dataInput.readObject();
+			contents = (Vector<DataItem>) dataInput.readObject();
 			dataInput.close();
 		} catch (FileNotFoundException e) {
 			javadesign.util.Util.alertError("数据文件丢失，已经重新生成！");
@@ -80,7 +80,7 @@ public class Data extends DefaultTableModel {
 			FileOutputStream fileOutput = new FileOutputStream(dataFile);
 			ObjectOutputStream dataOutput = new ObjectOutputStream(fileOutput);
 			if (contents == null)
-				contents = new Vector<ItemFromData>();
+				contents = new Vector<DataItem>();
 
 			dataOutput.writeObject(contents);
 			dataOutput.flush();

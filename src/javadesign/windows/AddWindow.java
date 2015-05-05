@@ -1,7 +1,10 @@
 package javadesign.windows;
 
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+
 import javadesign.abstractmodel.Window;
 import javadesign.specificmodel.GeneralFrame;
 import javadesign.util.StaticValue;
@@ -9,7 +12,7 @@ import javadesign.util.StaticValue;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-public class AddWindow extends Window implements KeyListener {
+public class AddWindow extends Window implements KeyListener, FocusListener {
 	private static final long serialVersionUID = 1L;
 	private JLabel[] labels;
 	private JTextField[] textFields;
@@ -21,7 +24,7 @@ public class AddWindow extends Window implements KeyListener {
 		status.getWindows().put("AddWindow", this);
 
 		setTitle("添加");
-		
+
 		setResizable(false);
 		getContentPane().setLayout(null);
 
@@ -35,6 +38,7 @@ public class AddWindow extends Window implements KeyListener {
 			labels[i].setBounds(10, 10 + i * 32, 86, 22);
 			textFields[i].setBounds(106, 10 + i * 32, 104, 22);
 			textFields[i].addKeyListener(this);
+			textFields[i].addFocusListener(this);
 			getContentPane().add(labels[i]);
 			getContentPane().add(textFields[i]);
 		}
@@ -72,5 +76,19 @@ public class AddWindow extends Window implements KeyListener {
 
 	@Override
 	public void keyTyped(KeyEvent arg0) {
+	}
+
+	@Override
+	public void focusGained(FocusEvent e) {
+		for (int i = 0; i < textFields.length; i++) {
+			if (e.getSource() == textFields[i]) {
+				currentIndex = i;
+				break;
+			}
+		}
+	}
+
+	@Override
+	public void focusLost(FocusEvent e) {
 	}
 }
