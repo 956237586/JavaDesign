@@ -66,7 +66,7 @@ public class GoodsDataAdmin extends GeneralFrame implements TableModelListener,
 		if (event.getColumn() == StaticValue.INDEX_GOOD_QUANTITY
 				|| event.getColumn() == StaticValue.INDEX_GOOD_UNIT_PRICE) {
 			double stock = 0;
-			double unitPrice = 0;// set unit price automatic
+			double unitPrice = 0;// set unit price automatically
 			try {
 				stock = Double.parseDouble(""
 						+ data.getValueAt(event.getFirstRow(),

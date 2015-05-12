@@ -14,7 +14,7 @@ import javax.swing.table.DefaultTableModel;
 /**
  * This class is an abstract model of the data, which is the basic class in all
  * of this system. This class have two property store data's contents and data
- * properties' name. The data will be write in to a file automatic.
+ * properties' name. The data will be write in to a file automatically.
  * 
  * @author HYL
  *

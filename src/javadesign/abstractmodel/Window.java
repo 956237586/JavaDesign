@@ -46,7 +46,7 @@ public class Window extends JFrame {
 	 */
 	public Window(String imgPath) {
 		this();
-		// the background image will be zoom automatic
+		// the background image will be zoom automatically
 		bgPicture = new PicturePanel(imgPath);
 		addComponentListener(new ComponentAdapter() {
 			@Override
