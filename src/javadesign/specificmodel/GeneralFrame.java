@@ -18,6 +18,12 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
 
+/**
+ * This class is basic of data view window, it has some button and a table.
+ * 
+ * @author HYL
+ *
+ */
 public class GeneralFrame extends Window implements MouseListener,
 		WindowListener {
 	private static final long serialVersionUID = 1L;
@@ -33,13 +39,15 @@ public class GeneralFrame extends Window implements MouseListener,
 	protected HashMap<Integer, JButton> jButtons = new HashMap<Integer, JButton>();
 
 	public GeneralFrame() {
+		// if without button number, use the default number
 		this(StaticValue.DEFAULT_BUTTON_NUM);
 	}
 
 	public GeneralFrame(int btnNum) {
+		// create with background image
 		super("res/bg.png");
 		this.btnNum = btnNum;
-		// 设置自动适应的界面
+		// set the component auto change size in window
 		addComponentListener(new ComponentAdapter() {
 			@Override
 			public void componentResized(ComponentEvent arg0) {
@@ -55,7 +63,7 @@ public class GeneralFrame extends Window implements MouseListener,
 		getContentPane().add(jScrollPane);
 
 		for (int i = 0; i < btnNum; i++) {
-			JButton btnNewButton = new JButton("New button");
+			JButton btnNewButton = new JButton();
 			jButtons.put(i, btnNewButton);
 			btnNewButton.setFont(StaticValue.DEFAULT_FONT);
 			btnNewButton.setBounds(10 + i * 108, 10, 98, 38);
@@ -94,7 +102,6 @@ public class GeneralFrame extends Window implements MouseListener,
 	}
 
 	public void addItem(String[] properties) {
-		System.out.println("super add");
 		reFresh();
 		System.gc();
 	}
@@ -103,13 +110,11 @@ public class GeneralFrame extends Window implements MouseListener,
 	}
 
 	public void loadData() {
-		System.out.println("super load");
 		data.loadData();
 		setup();
 	}
 
 	public void reFresh() {
-		System.out.println("reFresh reFresh");
 		// table.revalidate();
 		table.repaint();
 	}
@@ -130,7 +135,7 @@ public class GeneralFrame extends Window implements MouseListener,
 
 	@Override
 	public void windowClosing(WindowEvent e) {
-		data.saveData();// 关闭时自动保存数据
+		data.saveData();// save data when window closing
 	}
 
 	@Override

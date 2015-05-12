@@ -11,7 +11,7 @@ public class UserData extends Data {
 
 	@Override
 	public void loadData() {
-		// 测试数据
+		// test data
 		contents = new Vector<DataItem>();
 		String username = "admin";
 		contents.add(new User(username, username));

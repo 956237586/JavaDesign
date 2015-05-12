@@ -4,12 +4,13 @@ import javadesign.abstractmodel.DataItem;
 
 public class Good extends DataItem {
 	private static final long serialVersionUID = 1L;
-	private int id; // ID 0
-	private String name; // 名称 1
-	private String category; // 类别 2
-	private int quantity; // 数量 3 可能是库存，也可能是操作数
-	private double unitPrice; // 单价 4
-	private double totalPrice; // 总价 5
+	private int id;
+	private String name;
+	private String category;
+	// maybe store number or operate number
+	private int quantity;
+	private double unitPrice;
+	private double totalPrice;
 
 	public Good() {
 		add(id);
@@ -63,7 +64,7 @@ public class Good extends DataItem {
 		this.totalPrice = unitPrice * quantity;
 		set(5, totalPrice);
 	}
-	
+
 	@Override
 	public void setNote(String note) {
 		this.note = note;
@@ -83,7 +84,7 @@ public class Good extends DataItem {
 	}
 
 	public int getQuantity() {
-		return Integer.parseInt(get(3)+"");
+		return Integer.parseInt(get(3) + "");
 	}
 
 	public double getUnitPrice() {
@@ -91,7 +92,7 @@ public class Good extends DataItem {
 	}
 
 	public double getTotalPrice() {
-		return  (Double) get(5);
+		return (Double) get(5);
 	}
 
 }

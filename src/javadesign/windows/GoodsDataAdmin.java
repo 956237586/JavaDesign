@@ -66,7 +66,7 @@ public class GoodsDataAdmin extends GeneralFrame implements TableModelListener,
 		if (event.getColumn() == StaticValue.INDEX_GOOD_QUANTITY
 				|| event.getColumn() == StaticValue.INDEX_GOOD_UNIT_PRICE) {
 			double stock = 0;
-			double unitPrice = 0;// 自动计算总值
+			double unitPrice = 0;// set unit price automatic
 			try {
 				stock = Double.parseDouble(""
 						+ data.getValueAt(event.getFirstRow(),
@@ -75,7 +75,8 @@ public class GoodsDataAdmin extends GeneralFrame implements TableModelListener,
 						+ data.getValueAt(event.getFirstRow(),
 								StaticValue.INDEX_GOOD_UNIT_PRICE));
 			} catch (NumberFormatException e) {
-				e.printStackTrace();// 防止输入的不是数值
+				Util.alertError("请检查输入值是否合法");
+				e.printStackTrace();// check user input
 			}
 			double newTotalPrice = stock * unitPrice;
 			data.setValueAt(newTotalPrice, event.getFirstRow(),

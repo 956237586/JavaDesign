@@ -23,8 +23,10 @@ public class IconListRenderer extends JButton implements
 		MenuItem item = (MenuItem) value;
 		float size = list.getFont().getSize();
 
-		// 加入宽度为5的空白边框
+		// add empty border
 		setBorder(new EmptyBorder(5, 5, 5, 5));
+		
+		// zoom the text in the item
 		if (item.getMouseStatus() == 0 && isSelected) {
 			setFont(list.getFont().deriveFont(size + 3));
 		} else if (item.getMouseStatus() == 1) {

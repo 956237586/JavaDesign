@@ -6,6 +6,7 @@ import javadesign.util.StaticValue;
 
 public class IncomingRecordData extends OperateRecordData {
 	private static final long serialVersionUID = 1L;
+
 	public IncomingRecordData() {
 		super(StaticValue.INCOMING_COLUMN_NAMES);
 	}
@@ -14,7 +15,7 @@ public class IncomingRecordData extends OperateRecordData {
 	public void loadData() {
 		dataFile = new File(StaticValue.DATA_INCOMING);
 		super.loadData();
-		// 测试数据
+		// test data 
 		/*/
 		for (int i = 0; i < 10; i++) {
 			contents.add(new IncomingRecord(""+i,
@@ -38,7 +39,6 @@ public class IncomingRecordData extends OperateRecordData {
 		setDataVector(contents, columnNames);
 	}
 
-	
 	@Override
 	public void saveData() {
 		super.saveData();

@@ -54,7 +54,7 @@ public class AddWindow extends Window implements KeyListener, FocusListener {
 			if (properties[i].equals(""))
 				properties[i] = "0";
 		}
-		createWindow.addItem(properties);// 数据回传给上一个窗口
+		createWindow.addItem(properties);// sent data to create window
 	}
 
 	@Override

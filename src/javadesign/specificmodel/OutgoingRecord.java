@@ -6,11 +6,9 @@ public class OutgoingRecord extends OperateRecord {
 	public OutgoingRecord() {
 	}
 
-	public OutgoingRecord(String outgoingNo,
-			String operator, int outgoingGoodId, int outgoingQuantity,
-			String note) {
-		super(outgoingNo, operator, outgoingGoodId, outgoingQuantity,
-				note);
+	public OutgoingRecord(String outgoingNo, String operator,
+			int outgoingGoodId, int outgoingQuantity, String note) {
+		super(outgoingNo, operator, outgoingGoodId, outgoingQuantity, note);
 	}
 
 }

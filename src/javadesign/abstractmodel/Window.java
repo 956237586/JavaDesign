@@ -14,6 +14,14 @@ import javadesign.specificmodel.GoodsData;
 import javadesign.specificmodel.PicturePanel;
 import javadesign.util.StaticValue;
 
+/**
+ * This class is basic of windows in this program, all of window extends from
+ * this class. When you add all component you need , just use setup(), an window
+ * will be appear in center on the screen. Very simple!!
+ * 
+ * @author HYL
+ *
+ */
 public class Window extends JFrame {
 	private static final long serialVersionUID = 1L;
 	protected static Status status = new Status();// 为保证status唯一所以写在这里
@@ -31,9 +39,14 @@ public class Window extends JFrame {
 		}
 	}
 
+	/**
+	 * You can provide a image path as the background of window.
+	 * 
+	 * @param imgPath
+	 */
 	public Window(String imgPath) {
 		this();
-		// 设置自动缩放的背景
+		// the background image will be zoom automatic
 		bgPicture = new PicturePanel(imgPath);
 		addComponentListener(new ComponentAdapter() {
 			@Override
@@ -51,13 +64,14 @@ public class Window extends JFrame {
 
 		});
 	}
-	
+
 	public static GoodsData getGoodsData() {
 		return goodsData;
 	}
-	
+
 	public void setup() {
-		setLocationRelativeTo(null);// 所有窗口默认启动位置为居中
+		// all window appear in center of screen
+		setLocationRelativeTo(null);
 		setVisible(true);
 	}
 }

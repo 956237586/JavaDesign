@@ -28,23 +28,29 @@ public class OutgoingRecordAdmin extends OperateWindow {
 	public void addItem(String[] properties) {
 		int id = Integer.parseInt(properties[0]);
 		Good tGood = (Good) goodsData.getItemByKey(id);
-		if (tGood != null) {
-			int oldQuantity = tGood.getQuantity();
-			int quantity = Integer.parseInt(properties[1]);
-			if (oldQuantity > 0 && quantity <= oldQuantity) {
-				String note = properties[2];
-				String outGoingNo = "OUT" + formatter.format(new Date());
-				String operator = status.getLoginUsername();
-				tGood.setQuantity(tGood.getQuantity() - quantity);
-				data.addRow(new OutgoingRecord(outGoingNo, operator, id,
-						quantity, note));
-				super.addItem(properties);
+
+		try {
+			if (tGood != null) {
+				int oldQuantity = tGood.getQuantity();
+				int quantity = Integer.parseInt(properties[1]);
+				if (oldQuantity > 0 && quantity <= oldQuantity) {
+					String note = properties[2];
+					String outGoingNo = "OUT" + formatter.format(new Date());
+					String operator = status.getLoginUsername();
+					tGood.setQuantity(tGood.getQuantity() - quantity);
+					data.addRow(new OutgoingRecord(outGoingNo, operator, id,
+							quantity, note));
+					super.addItem(properties);
+				} else {
+					Util.alertError("该种货物库存不足，请进货后再出货！");
+				}
 			} else {
-				Util.alertError("该种货物库存不足，请进货后再出货！");
+				Util.alertError("该种货物不存在，查证后重试！");
+				showAddWindow();
 			}
-		} else {
-			Util.alertError("该种货物不存在，查证后重试！");
-			showAddWindow();
+		} catch (NumberFormatException e) {
+			Util.alertError("请检查输入值是否合法");
+			e.printStackTrace();// check user input
 		}
 	}
 

@@ -1,5 +1,13 @@
 package javadesign.abstractmodel;
 
+/**
+ * This class is abstract form all of function of this program. Every instance
+ * represent a menu item in the menu window. This class can set and get icon and
+ * text of menu item.
+ * 
+ * @author HYL
+ *
+ */
 public class MenuItem {
 
 	private String iconPath;
@@ -39,26 +47,4 @@ public class MenuItem {
 		this.mouseStatus = mouseStatus;
 	}
 
-	/*
-	 * / public static void main(String[] args) { JFrame j = new JFrame("123");
-	 * // j.getContentPane().add(new ItemFromJList("res/bg.png","321321")); //
-	 * j.getContentPane().add(new //
-	 * ItemFromJList("res/icon2.png","111111121")); JList<ItemFromJList> list =
-	 * new JList<ItemFromJList>(); // list.setFont(DEFAULT_LIST_FONT);
-	 * list.setCellRenderer(new IconListRenderer());
-	 * list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-	 * DefaultListModel<ItemFromJList> listModel = new
-	 * DefaultListModel<ItemFromJList>(); list.setModel(listModel);
-	 * list.setOpaque(false); // 透明显示
-	 * 
-	 * ItemFromJList item1 = new ItemFromJList("res/icon1.png", "这是测试文字1");
-	 * ItemFromJList item2 = new ItemFromJList("res/icon2.png", "这是测试文字2");
-	 * ItemFromJList item3 = new ItemFromJList("res/icon3.png", "这是测试文字3");
-	 * 
-	 * listModel.addElement(item1); listModel.addElement(item2);
-	 * listModel.addElement(item3);
-	 * 
-	 * list.setBounds(76, 135, 262, 335); j.add(list); j.setBounds(0, 0, 400,
-	 * 400); j.setVisible(true); } //
-	 */
 }

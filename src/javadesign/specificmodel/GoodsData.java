@@ -6,18 +6,25 @@ import javadesign.abstractmodel.Data;
 import javadesign.abstractmodel.DataItem;
 import javadesign.util.StaticValue;
 
+/**
+ * This class store goods data.
+ * 
+ * @author HYL
+ *
+ */
 public class GoodsData extends Data {
 	private static final long serialVersionUID = 1L;
+
 	public GoodsData() {
 		super(StaticValue.GOODS_COLUMN_NAMES);
-		//loadData();
+		// loadData();
 	}
 
 	@Override
 	public void loadData() {
-		dataFile=new File(StaticValue.DATA_GOOD);
+		dataFile = new File(StaticValue.DATA_GOOD);
 		super.loadData();
-		// 测试数据
+		// test data
 		/*
 		System.out.println();
 		for (int i = 0; i < 10; i++) {
@@ -52,7 +59,7 @@ public class GoodsData extends Data {
 		}
 		return null;
 	}
-	
+
 	@Override
 	public void saveData() {
 		super.saveData();

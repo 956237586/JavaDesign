@@ -11,6 +11,14 @@ import java.util.Vector;
 
 import javax.swing.table.DefaultTableModel;
 
+/**
+ * This class is an abstract model of the data, which is the basic class in all
+ * of this system. This class have two property store data's contents and data
+ * properties' name. The data will be write in to a file automatic.
+ * 
+ * @author HYL
+ *
+ */
 public class Data extends DefaultTableModel {
 	private static final long serialVersionUID = 1L;
 	protected Vector<DataItem> contents;
@@ -20,6 +28,12 @@ public class Data extends DefaultTableModel {
 	public Data() {
 	}
 
+	/**
+	 * Using some data item properties' name to create a Data instance.
+	 * 
+	 * @param columnNames
+	 *            data item properties' name
+	 */
 	public Data(String[] columnNames) {
 		for (int i = 0; i < columnNames.length; i++) {
 			this.columnNames.add(columnNames[i]);
@@ -27,6 +41,12 @@ public class Data extends DefaultTableModel {
 		loadData();
 	}
 
+	/**
+	 * Add item to data file.
+	 * 
+	 * @param item
+	 *            data item
+	 */
 	public void addItem(DataItem item) {
 		if (item != null)
 			contents.add(item);
@@ -54,6 +74,10 @@ public class Data extends DefaultTableModel {
 		return null;
 	}
 
+	/**
+	 * Load data form file, If file not found, it will create an empty data
+	 * file.
+	 */
 	@SuppressWarnings("unchecked")
 	public void loadData() {
 		System.out.println("super load data");
@@ -74,6 +98,10 @@ public class Data extends DefaultTableModel {
 
 	}
 
+	/**
+	 * Save data to file, if data file not exist, it will create an empty data
+	 * file.
+	 */
 	public void saveData() {
 		System.out.println("super save data");
 		try {

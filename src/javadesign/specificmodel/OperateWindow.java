@@ -5,9 +5,11 @@ import java.text.SimpleDateFormat;
 import javadesign.util.StaticValue;
 import javadesign.windows.AddWindow;
 
-public class OperateWindow extends GeneralFrame{
+public class OperateWindow extends GeneralFrame {
 	private static final long serialVersionUID = 1L;
-	protected SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMddHHmmss");
+	protected SimpleDateFormat formatter = new SimpleDateFormat(
+			"yyyyMMddHHmmss");
+
 	public OperateWindow() {
 		loadData();
 		table.getColumnModel().getColumn(0).setPreferredWidth(140);

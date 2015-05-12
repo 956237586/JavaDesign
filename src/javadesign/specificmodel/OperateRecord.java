@@ -18,13 +18,14 @@ public class OperateRecord extends DataItem {
 			int operateQuantity, String note) {
 		setOperateNo(operateNo);
 		setOperator(operator);
-		//setOperateGoodId(operateGoodId);
-		//setOperateQuantity(operateQuantity);
+		// setOperateGoodId(operateGoodId);
+		// setOperateQuantity(operateQuantity);
 		Good tGood = (Good) Window.getGoodsData().getItemByKey(operateGoodId);
 		String name = tGood.getName();
 		String category = tGood.getCategory();
 		double unitPrice = tGood.getUnitPrice();
-		setOperateGood(new Good(operateGoodId, name, category, operateQuantity, unitPrice, note));
+		setOperateGood(new Good(operateGoodId, name, category, operateQuantity,
+				unitPrice, note));
 	}
 
 	public String getOperateNo() {
@@ -49,7 +50,7 @@ public class OperateRecord extends DataItem {
 		for (Object o : operateGood)
 			add(o);
 	}
-	
+
 	public int getOperateGoodId() {
 		return operateGoodId;
 	}
