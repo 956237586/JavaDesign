@@ -6,7 +6,6 @@ import javadesign.specificmodel.Good;
 import javadesign.specificmodel.IncomingRecord;
 import javadesign.specificmodel.IncomingRecordData;
 import javadesign.specificmodel.OperateWindow;
-import javadesign.util.StaticValue;
 import javadesign.util.Util;
 
 public class IncomingRecordAdmin extends OperateWindow {
